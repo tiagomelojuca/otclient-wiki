@@ -18,6 +18,7 @@ function myDummyFunction()
     int windowHorizontalSize; // Correct
 }
 ```
+
 * Single character variable names are only okay for counters and temporaries, where the purpose of the variable is obvious
 * Classes always start with a big letter.
 * Class members variables always begins with m_ fallowed by a lower case
