@@ -45,6 +45,13 @@ class Game { };
 extern Game g_game;
 ```
 
+### Iterators
+* Use **auto** keyword in all iterators
+```C
+std::map<int, std::string>::iterator it = myMap.begin(); // Wrong
+auto it = myMap.begin(); // Correct
+```
+
 ### Sources files
 * Include prerequisites.h first in every header file
 * All sources files have the license and copyright note on top
