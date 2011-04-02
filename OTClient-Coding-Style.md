@@ -19,3 +19,7 @@ int windowHorizontalSize; // Correct
 name starts with a capital letter
 * Avoid abbreviations
 * Classes always start with a big letter.
+
+### Documentation
+* Comment anything that you feel relevant
+* Document functions on headers using /// or /** */ to enable doxygen output
