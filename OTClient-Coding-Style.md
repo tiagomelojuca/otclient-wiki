@@ -49,9 +49,10 @@ extern Game g_game;
 * Use **auto** keyword on every iterator
 ```C
 std::map<int, std::string>::iterator it = myMap.begin(); // Wrong
-for(std::map<int, std::string>::iterator it = myMap.begin(); it != myMap.end(); it++) // Wrong
 auto it = myMap.begin(); // Correct
-for(auto it = myMap.begin(); it != myMap.end(); ++it) // Wrong
+
+for(std::map<int, std::string>::iterator it = myMap.begin(); it != myMap.end(); it++) // Wrong
+for(auto it = myMap.begin(); it != myMap.end(); ++it) // Correct
 ```
 
 ### Sources files
