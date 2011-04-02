@@ -20,6 +20,15 @@ name starts with a capital letter
 * Avoid abbreviations
 * Classes always start with a big letter.
 
+### Singletons
+* Use the following style to declare singletons
+```C
+// on game.cpp top
+Game g_game;
+// on game.h bottom
+extern Game g_game;
+```
+
 ### Documentation
 * Comment anything that you feel relevant
 * Document functions on headers using /// or /** */ to enable doxygen output
