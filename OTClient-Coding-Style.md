@@ -46,7 +46,7 @@ extern Game g_game;
 ```
 
 ### Iterators
-* Use **auto** keyword in all iterators
+* Use **auto** keyword on every iterator
 ```C
 std::map<int, std::string>::iterator it = myMap.begin(); // Wrong
 for(std::map<int, std::string>::iterator it = myMap.begin(); it != myMap.end(); it++) // Wrong
