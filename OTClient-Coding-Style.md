@@ -41,7 +41,7 @@ class DummyClass
 // on game.cpp top
 Game g_game;
 // on game.h bottom
-class Game { };
+class Game { ... };
 extern Game g_game;
 ```
 
@@ -58,6 +58,14 @@ for(auto it = myMap.begin(); it != myMap.end(); ++it) // Correct
 ### Sources files
 * Include prerequisites.h first in every header file
 * All sources files have the license and copyright note on top
+
+
+### Classes
+* When using new use brackets only when needed
+```C
+new DummyClass(); // Wrong
+new DummyClass; // Correct
+```
 
 ### Documentation
 * Comment anything that you feel relevant
