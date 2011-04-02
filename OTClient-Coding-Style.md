@@ -57,7 +57,7 @@ for(auto it = myMap.begin(); it != myMap.end(); ++it) // Correct
 
 ### Sources files
 * Include prerequisites.h first in every header file
-* All sources files have the license and copyright note on top
+* All sources files must have the license and copyright note on top
 
 
 ### Classes
