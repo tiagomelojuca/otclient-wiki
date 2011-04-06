@@ -103,6 +103,7 @@ new DummyClass; // Correct
 
 * Avoid empty constructors in sources files
 * Declare destructors only when needed
+* Get methods must have **const** keyword
 
 ### Documentation
 * Comment anything that you feel relevant
@@ -114,5 +115,6 @@ new DummyClass; // Correct
 * Make algorithms readable and organized
 * Comment complex ones
 
-### Pointers
+### Pointers and memory
 * Avoid to use **delete** keyword or manage memory on you own, always prefer smart pointers
+* Prefer to pass functions variables by referece using **cost**, but just for complex types
