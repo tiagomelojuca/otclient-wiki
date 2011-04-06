@@ -5,6 +5,13 @@
 ### Declaring variables
 * Variables and functions start with a small letter. Each consecive word in a variable’s
 name starts with a capital letter
+```
+  Class:            MyDummyClass
+  Method:           myFooMethod
+  Member:           m_barVariable
+  Constant/enum:    CONSTANT_OR_ENUM
+```
+
 * Avoid short names and abbreviations whenever possible, use readable names
 
 ```C
