@@ -117,4 +117,4 @@ new DummyClass; // Correct
 
 ### Pointers and memory
 * Avoid to use **delete** keyword or manage memory on you own, always prefer smart pointers
-* Prefer to pass functions variables by referece using **cost** keyword, but just for complex types
+* Prefer to pass complex functions variables by referece using **cost** keyword
