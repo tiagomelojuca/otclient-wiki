@@ -95,6 +95,7 @@ class Dummy {
 
 ### Classes
 * When using new use brackets only when needed
+
 ```C
 new DummyClass(); // Wrong
 new DummyClass; // Correct
