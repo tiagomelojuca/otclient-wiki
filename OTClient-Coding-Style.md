@@ -63,7 +63,21 @@ foreach(const std::string& file, files) { } // Corect
 ### Sources files
 * Include prerequisites.h first in every header file
 * All sources files must have the license and copyright note on top
+* Only include needed headers
+* Whenever is possible declare classes names instead of including it's headers
+```C
+// Wrong
+#include "foo.h"
+class Dummy {
+    SomeClass *m_foo;
+};
 
+// Correct
+class Foo;
+class Dummy {
+    SomeClass *m_foo;
+};
+```
 
 ### Classes
 * When using new use brackets only when needed
