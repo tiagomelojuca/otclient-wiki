@@ -78,3 +78,6 @@ new DummyClass; // Correct
 ### Documentation
 * Comment anything that you feel relevant
 * Document functions on headers using /// or /** */ to enable doxygen output
+
+### Pointers
+* Avoid to use **delete** keyword and manage memory on you own, always prefer smart pointers
