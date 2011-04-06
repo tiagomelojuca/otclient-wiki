@@ -101,5 +101,11 @@ new DummyClass; // Correct
 * Comment anything that you feel relevant
 * Document functions on headers using /// or /** */ to enable doxygen output
 
+
+### Algorithms
+* Use high level classes like Rect, Point, std::string whenever is possible
+* Make them readable and organized
+* Comment complex ones
+
 ### Pointers
 * Avoid to use **delete** keyword or manage memory on you own, always prefer smart pointers
