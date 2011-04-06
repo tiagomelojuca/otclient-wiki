@@ -34,6 +34,14 @@ class DummyClass
 
 * Struct member variables must not begin with m_, avoid structs and use only when it feels right
 * Global variables begins with g_
+* Use bultin int types
+```C
+uint32_t var; // Wrong
+uint32 var; // Correct
+
+unsigned long var; // Wrong
+ulong var; // Correct
+```
 
 ### Singletons
 * Use the following style to declare singletons
