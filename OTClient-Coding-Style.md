@@ -45,7 +45,7 @@ class Game { ... };
 extern Game g_game;
 ```
 
-### Iterators
+### Loops and iterators
 * Use **auto** keyword on every iterator
 ```C
 std::map<int, std::string>::iterator it = myMap.begin(); // Wrong
@@ -53,6 +53,11 @@ auto it = myMap.begin(); // Correct
 
 for(std::map<int, std::string>::iterator it = myMap.begin(); it != myMap.end(); it++) // Wrong
 for(auto it = myMap.begin(); it != myMap.end(); ++it) // Correct
+```
+* Prefer foreach over iterators when performance isn't needed, as it is clean to read
+```C
+for(auto it = files.begin(); it != files.end(); ++it) { } // Wrong
+foreach(const std::string& file, files) { } // Corect
 ```
 
 ### Sources files
@@ -66,6 +71,9 @@ for(auto it = myMap.begin(); it != myMap.end(); ++it) // Correct
 new DummyClass(); // Wrong
 new DummyClass; // Correct
 ```
+
+* Avoid empty constructors in sources files
+* Declare destructors only when needed
 
 ### Documentation
 * Comment anything that you feel relevant
