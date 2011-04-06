@@ -80,4 +80,4 @@ new DummyClass; // Correct
 * Document functions on headers using /// or /** */ to enable doxygen output
 
 ### Pointers
-* Avoid to use **delete** keyword and manage memory on you own, always prefer smart pointers
+* Avoid to use **delete** keyword or manage memory on you own, always prefer smart pointers
