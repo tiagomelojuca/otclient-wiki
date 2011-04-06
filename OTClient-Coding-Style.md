@@ -3,8 +3,6 @@
 * Spaces, not tabs!
 
 ### Declaring variables
-* Variables and functions start with a small letter. Each consecive word in a variable’s
-name starts with a capital letter
 ```
   Class:            MyDummyClass
   Method:           myFooMethod
@@ -12,6 +10,8 @@ name starts with a capital letter
   Constant/enum:    CONSTANT_OR_ENUM
 ```
 
+* Variables and functions start with a small letter. Each consecive word in a variable’s
+name starts with a capital letter
 * Avoid short names and abbreviations whenever possible, use readable names
 
 ```C
