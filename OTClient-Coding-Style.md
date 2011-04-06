@@ -35,6 +35,7 @@ class DummyClass
 * Struct member variables must not begin with m_, avoid structs and use only when it feels right
 * Global variables begins with g_
 * Use bultin int types
+
 ```C
 uint32_t var; // Wrong
 uint32 var; // Correct
@@ -45,6 +46,7 @@ ulong var; // Correct
 
 ### Singletons
 * Use the following style to declare singletons
+
 ```C
 // on game.cpp top
 Game g_game;
@@ -55,6 +57,7 @@ extern Game g_game;
 
 ### Loops and iterators
 * Use **auto** keyword on every iterator
+
 ```C
 std::map<int, std::string>::iterator it = myMap.begin(); // Wrong
 auto it = myMap.begin(); // Correct
@@ -62,7 +65,9 @@ auto it = myMap.begin(); // Correct
 for(std::map<int, std::string>::iterator it = myMap.begin(); it != myMap.end(); it++) // Wrong
 for(auto it = myMap.begin(); it != myMap.end(); ++it) // Correct
 ```
+
 * Prefer foreach over iterators when performance isn't needed, as it is clean to read
+
 ```C
 for(auto it = files.begin(); it != files.end(); ++it) { } // Wrong
 foreach(const std::string& file, files) { } // Corect
@@ -73,6 +78,7 @@ foreach(const std::string& file, files) { } // Corect
 * All sources files must have the license and copyright note on top
 * Only include needed headers
 * Whenever is possible declare classes names instead of including it's headers
+
 ```C
 // Wrong
 #include "foo.h"
@@ -100,7 +106,6 @@ new DummyClass; // Correct
 ### Documentation
 * Comment anything that you feel relevant
 * Document functions on headers using /// or /** */ to enable doxygen output
-
 
 ### Algorithms
 * Use high level classes like Rect, Point, std::string whenever is possible
