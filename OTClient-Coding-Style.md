@@ -104,7 +104,8 @@ new DummyClass; // Correct
 
 ### Algorithms
 * Use high level classes like Rect, Point, std::string whenever is possible
-* Make them readable and organized
+* Use high level APIs, for strings boost/algorithm/string and boost/regex is there
+* Make algorithms readable and organized
 * Comment complex ones
 
 ### Pointers
