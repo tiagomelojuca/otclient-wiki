@@ -1,3 +1,5 @@
+# The Official OTClient Wiki
+
 ## Welcome!
 
 If you are looking for information about OTClient here is the right place. This is the official community maintained repository of information and documentation for users, developers and contributors.
