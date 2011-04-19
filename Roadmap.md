@@ -30,6 +30,7 @@ The main goal of this version is to implement a flexible UI system scriptable wi
 ## Version 0.3
 The main goal of this version is to implement network and first game stuff,
 like loading character list, enter the game, loading sprites/items, rendering map.
+
 * Connecting **[in progress]**
 * Protocols **[in progress]**
 * Network messages **[in progress]**
