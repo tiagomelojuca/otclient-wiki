@@ -10,7 +10,7 @@
   cmake .
   make
   sudo make install
-  cd..
+  cd ..
 
   # clone repository
   git clone git://github.com/edubart/otclient.git
