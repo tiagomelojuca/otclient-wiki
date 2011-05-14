@@ -17,5 +17,5 @@ users can create their own game interfaces and functionality on top of the origi
 * [Roadmap](https://github.com/edubart/otclient/wiki/Roadmap)
 
 ## Developing Resources
-
 * [OTClient Coding Style](https://github.com/edubart/otclient/wiki/OTClient-Coding-Style)
+* [Compiling on Ubuntu or Debian](https://github.com/edubart/otclient/wiki/Compiling-on-Ubuntu-or-Debian)
