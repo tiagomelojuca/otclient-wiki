@@ -10,19 +10,11 @@
   cmake .
   make
   sudo make install
-  cd ..
 
-  # clone repository
+  # clone, build and run
   git clone git://github.com/edubart/otclient.git
   cd otclient
-
-  # building
-  mkdir build
-  cd build
-  cmake ..
-  cd ..
-  make -C build
-
-  # running
-  ./build/otclient
+  cmake .
+  make
+  ./otclient
 ```
