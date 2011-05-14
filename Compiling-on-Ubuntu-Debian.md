@@ -1,6 +1,7 @@
 ```bash
   # install requeried dev packages
-  sudo aptitude install build-essential cmake libboost-dev-all libphysfs-dev libgmp3-dev liblua5.1-dev libglu1-mesa-dev libgl1-mesa-dev
+  sudo apt-get install build-essential cmake libboost-dev-all
+  sudo apt-get install libphysfs-dev libgmp3-dev liblua5.1-dev libglu1-mesa-dev libgl1-mesa-dev
 
   # install yaml 2.6
   cd /tmp
