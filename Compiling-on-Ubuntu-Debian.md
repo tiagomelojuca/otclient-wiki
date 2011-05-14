@@ -1,4 +1,4 @@
-``Bash
+```bash
   # install requeried dev packages
   sudo aptitude install build-essential cmake libboost-dev-all libphysfs-dev libgmp3-dev liblua5.1-dev libglu1-mesa-dev libgl1-mesa-dev
 
@@ -24,4 +24,4 @@
 
   # running
   ./build/otclient
-``
+```
