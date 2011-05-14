@@ -1,25 +1,26 @@
-# install requeried dev packages
-sudo aptitude install build-essential cmake libboost-dev-all libphysfs-dev libgmp3-dev liblua5.1-dev libglu1-mesa-dev libgl1-mesa-dev
+``Bash
+  # install requeried dev packages
+  sudo aptitude install build-essential cmake libboost-dev-all libphysfs-dev libgmp3-dev liblua5.1-dev libglu1-mesa-dev libgl1-mesa-dev
 
-# install yaml 2.6
-cd /tmp
-wget http://yaml-cpp.googlecode.com/files/yaml-cpp-0.2.6.tar.gz
-tar xzvf yaml-cpp-0.2.6.tar.gz 
-cd yaml-cpp
-cmake .
-make
-sudo make install
+  # install yaml 2.6
+  cd /tmp
+  wget http://yaml-cpp.googlecode.com/files/yaml-cpp-0.2.6.tar.gz
+  tar xzvf yaml-cpp-0.2.6.tar.gz 
+  cd yaml-cpp
+  cmake .
+  make
+  sudo make install
 
-# clone repository
-git clone git://github.com/edubart/otclient.git
-cd otclient
+  # clone repository
+  git clone git://github.com/edubart/otclient.git
+  cd otclient
 
-# building
-mkdir build
-cd build
-cmake ..
-cd ..
-make -C build
+  # building
+  mkdir build
+  cd build
+  cmake ..
+  cd ..
+  make -C build
 
-# running
-./build/otclient
+  # running
+  ./build/otclient
