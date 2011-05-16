@@ -13,10 +13,11 @@ extend game functionalitty with "addons", feature inspirited by "World of Warcra
 users can create their own game interfaces and functionality on top of the original game.
 
 ## General Resources
-* [FAQ](https://github.com/edubart/otclient/wiki/FAQ)
-* [Roadmap](https://github.com/edubart/otclient/wiki/Roadmap)
+* [[FAQ]]]
+* [[Roadmap]]
 
 ## Developing Resources
-* [OTClient Coding Style](https://github.com/edubart/otclient/wiki/OTClient-Coding-Style)
-* [Compiling on Ubuntu](https://github.com/edubart/otclient/wiki/Compiling-on-Ubuntu)
-* [Compiling for Windows on Ubuntu](https://github.com/edubart/otclient/wiki/Compiling-for-Windows-on-Ubuntu)
+* [[OTClient Coding Style]]
+* [[Compiling on Ubuntu]]
+* [[Cross compiling for Windows on Ubuntu]]
+* [[Compiling on Windows]]
