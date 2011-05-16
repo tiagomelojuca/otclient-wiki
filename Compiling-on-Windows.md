@@ -1,4 +1,4 @@
-* Download the latest automated mingw32 installer [mingw-get-inst](http://sourceforge.net/projects/mingw/files/Automated%20MinGW%20Installer/mingw-get-inst/)
+* Download the latest [automated mingw32  installer](http://sourceforge.net/projects/mingw/files/Automated%20MinGW%20Installer/mingw-get-inst/)
 * Run and install it, when installing make sure that you enable `C++ compiler`
 * Install the [latest cmake Win32 installer](http://www.cmake.org/cmake/resources/software.html)
 * Now you have to add cmake and mingw32 paths to your system environment, follow this steps:
@@ -6,7 +6,7 @@
    * Add a new user variable named `Path*`
    * Set its value to `C:\MinGW\bin;C:\MinGW\lib;C:\MinGW\include;C:\Program Files\CMake 2.8\bin`
    * You might change the above value with your correct mingw32 and cmake installation folder
-* Download [otclient required libraries](http://cloud.github.com/downloads/edubart/otclient/otclient-libs_mingw32.zip)
+* Download the [latest otclient required libraries](http://cloud.github.com/downloads/edubart/otclient/otclient-libs_mingw32.zip)
 * Extract it into `C:\MinGW`
 * Download and extract [latest otclient source code](https://github.com/edubart/otclient/zipball/master)
 * Run CMake GUI (Start->Programs->CMake 2.8->CMake)
