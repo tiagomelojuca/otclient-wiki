@@ -1,3 +1,6 @@
+## Compiling using DOS prompt
+Follow these steps to compile the otclient using Mingw32, CMake and DOS prompt command:
+
 * Download the [latest automated mingw32  installer](http://sourceforge.net/projects/mingw/files/Automated%20MinGW%20Installer/mingw-get-inst/)
 * Run and install it, when installing make sure that you enable `C++ compiler`
 * Install the [latest cmake Win32 installer](http://www.cmake.org/cmake/resources/software.html)
@@ -20,3 +23,6 @@
 * Now if no errors were found otclient.exe has been created in the current folder
 * To run correctly the working dir must be the otclient soruce path, so move it to otclient source path
 * Now **run it!**
+
+## Tip: Using Qt Creator IDE
+If you don't like to use the DOS prompt, you can use [Qt Creator IDE](http://qt.nokia.com/downloads/qt-creator-binary-for-windows). To do that, after doing the above steps you could open the otclient/CMakeLists.txt file in Qt Creator and compile there.
