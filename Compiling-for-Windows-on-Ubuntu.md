@@ -4,7 +4,7 @@
 
   # download and install required libs
   cd /usr/i586-mingw32msvc
-  sudo wget https://github.com/downloads/edubart/otclient/otclient-mingw32-libs.tar.gz
+  sudo wget http://github.com/downloads/edubart/otclient/otclient-mingw32-libs.tar.gz
   sudo tar xzf otclient-mingw32-libs.tar.gz
   sudo rm otclient-mingw32-libs.tar.gz
 
