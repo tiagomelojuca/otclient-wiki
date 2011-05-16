@@ -1,11 +1,11 @@
 # The Official OTClient Wiki
 
 ## Welcome!
-If you are looking for information about OTClient here is the right place. This is the official community maintained repository of information and documentation for users, developers and contributors.
+If you are looking for information about OTClient, here is the right place. This is the official community maintained repository of information and documentation for users, developers and contributors.
 
 ## About OTClient
 OTClient is an alternative Tibia client for usage with otserv.
-It aims to be a complete flexible, for that it uses LUA
+It aims to be complete and flexible, for that it uses LUA
 scripting for all game interface functionality and configurations with YAML files.
 It works with a modular system where each functionallity is a separated module,
 this gives the possibility to users modify anything easily. It also allows to
