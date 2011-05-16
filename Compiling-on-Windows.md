@@ -1,4 +1,4 @@
-* Download the latest [automated mingw32  installer](http://sourceforge.net/projects/mingw/files/Automated%20MinGW%20Installer/mingw-get-inst/)
+* Download the [latest automated mingw32  installer](http://sourceforge.net/projects/mingw/files/Automated%20MinGW%20Installer/mingw-get-inst/)
 * Run and install it, when installing make sure that you enable `C++ compiler`
 * Install the [latest cmake Win32 installer](http://www.cmake.org/cmake/resources/software.html)
 * Now you have to add cmake and mingw32 paths to your system environment, follow this steps:
