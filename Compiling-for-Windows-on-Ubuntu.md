@@ -1,5 +1,5 @@
 ```Bash
-  # install requered packages
+  # install required packages
   sudo apt-get install build-essential cmake gcc-mingw32 git-core
 
   # download and install required libs
