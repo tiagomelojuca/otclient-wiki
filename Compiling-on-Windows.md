@@ -7,7 +7,7 @@ Follow these steps to compile the otclient using Mingw32, CMake and DOS prompt c
 * Now you have to add cmake and mingw32 paths to your system environment, follow this steps:
    * If you use Windows XP go into `Control Panel->System->Advanced->Environment Variables`
    * Add a new user variable named `Path`
-   * Set its value to `C:\MinGW\bin;C:\MinGW\lib;C:\MinGW\include;C:\Program Files\CMake 2.8\bin`
+   * Set its value to `C:\MinGW\bin;C:\Program Files\CMake 2.8\bin;C:\MinGW\lib;C:\MinGW\include`
    * You might change the above value with your correct mingw32 and cmake installation folder
 * Download the [latest otclient required libraries](http://cloud.github.com/downloads/edubart/otclient/otclient-libs_mingw32.zip)
 * Extract it into `C:\MinGW`
