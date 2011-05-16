@@ -1,4 +1,4 @@
-```Bash
+```bash
   # install required packages
   sudo apt-get install build-essential cmake gcc-mingw32 git-core
 
