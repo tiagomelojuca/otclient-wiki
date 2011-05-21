@@ -23,7 +23,7 @@ The main goal of this version is to implement a flexible UI system scriptable wi
 * UI theming **[done]** 
 * UI anchoring layout **[done]**
 * Basic UI elements **[done]**
-* Loading UI from YAML files **[done]**
+* Loading UI from FML files **[done]**
 * Scripting with lua **[mostly done]**
 * Complete UI lua binding **[in progress]**
 * Modular system
