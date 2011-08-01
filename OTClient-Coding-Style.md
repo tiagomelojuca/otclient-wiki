@@ -1,9 +1,9 @@
-### Identation
+### Indentation
 * 4 spaces are used for indentation
 * Spaces, not tabs!
 
 ### Declaring variables
-* Variables/functions start with a small letter and each consecive word starts with a capital letter.
+* Variables/functions start with a small letter and each consecutive word starts with a capital letter.
 * Avoid short names and abbreviations whenever possible. Use readable names.
 
 ```cpp
@@ -61,18 +61,18 @@
     for(auto it = myMap.begin(); it != myMap.end(); ++it) // Correct
 ```
 
-* Prefer foreach over iterators when performance isn't needed, as it is clean to read:
+* Use C++0x for each when you can:
 
 ```cpp
     for(auto it = files.begin(); it != files.end(); ++it) { } // Wrong
-    foreach(const std::string& file, files) { } // Corect
+    foreach(const std::string& file : files) { } // Correct
 ```
 
 ### Sources files
-* Include prerequisites.h first in every file.
+* If you need any STL header use global.h, avoid flooding includes.
 * All sources files must have the license and copyright note on top.
 * Only include needed headers.
-* Whenever is possible declare classes names instead of including it's headers.
+* Whenever is possible, declare classes names instead of including it's headers.
 
 ```cpp
     // Wrong
@@ -102,14 +102,14 @@
 
 ### Documentation
 * Comment anything that you feel relevant.
-* Document functions on headers using /// or to enable doxygen output.
+* Document functions on headers using /// to enable doxygen output.
 
 ### Algorithms
 * Use high level classes like Rect, Point, std::string whenever is possible.
-* Use high level APIs, for strings boost algorithm and regex is there.
+* Use high level APIs, e.g. for strings boost algorithm is there.
 * Make algorithms readable and organized.
 * Comment complex ones.
 
 ### Pointers and memory
 * Avoid to use **delete** keyword or manage memory on you own, always prefer smart pointers.
-* Prefer to pass complex functions variables by referece and using **const** keyword.
+* Prefer to forward complex objects variables by reference and using **const** keyword.
