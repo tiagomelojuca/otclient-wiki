@@ -1,5 +1,5 @@
 ### IMPORT RULES THAT MATTERS
-Before implementing anything, you must REALLY follow the next 7 code rules. They are coding techniques that changes the way you will implement anything. There is a logical reason behind each one.
+Before implementing anything, you must REALLY follow the next 8 code rules. They are coding techniques that changes the way you will implement anything. There is a logical reason behind each one.
 
 * Avoid pointers at all costs, use only when really needed like for C strings (char*), avoid even for buffers of ints.
 * If you need a buffer, use std::vector.
@@ -7,7 +7,8 @@ Before implementing anything, you must REALLY follow the next 7 code rules. They
 * Never use **delete** keyword, and when I say never, I mean NEVER. If you think you need to use delete you didn't read the previous two rules.
 * Pass small objects like Position, Rect, std::string, by reference.
 * Include only declarations from other objects in headers files, never definitions, you can see the declarations.h pattern in the source.
-* If you think anything can go wrong on your code, you can abuse of asserts for checking
+* If you think anything can go wrong on your code, you can abuse of asserts for checking.
+* C++0x comes with a varieties of new utilities, you can and you are encouraged to use them.
 
 ### Indentation
 * 4 spaces are used for indentation
