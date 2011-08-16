@@ -4,7 +4,7 @@ Before implementing anything, you must REALLY follow the next 7 code rules. They
 * Avoid pointers at all costs, use only when really needed like for C strings (char*), avoid even for buffers of ints.
 * If you need a buffer, use std::vector.
 * Never use pointers for objects, if you think you need so I'm sure you can either use std::shared_ptr or pass the object by reference.
-* Never use **delete** keyword, and when I say never, I mean NEVER. If you think you need to use delete you din't read the previous two rules.
+* Never use **delete** keyword, and when I say never, I mean NEVER. If you think you need to use delete you didn't read the previous two rules.
 * Pass small objects like Position, Rect, std::string, by reference.
 * Include only declarations from other objects in headers files, never definitions, you can see the declarations.h pattern in the source.
 * If you think anything can go wrong on your code, you can abuse of asserts for checking
