@@ -23,15 +23,18 @@ The main goal of this version is to implement a flexible UI system scriptable wi
 * UI theming **[done]** 
 * UI anchoring layout **[done]**
 * Basic UI elements **[done]**
-* Loading UI from FML files **[done]**
-* Scripting with lua **[mostly done]**
-* Complete UI lua binding **[in progress]**
-* Modular system
+* Loading UI from OTML files **[done]**
+* Scripting with lua **[done]**
+* Modular system **[done]**
 
 ## Version 0.3
 The main goal of this version is to implement network and first game stuff,
 like loading character list, enter the game, loading sprites/items, rendering map.
 
-* Connecting **[in progress]**
-* Protocols **[in progress]**
-* Network messages **[in progress]**
+* Network **[done]**
+* Protocols **[done]**
+* Sprite manager **[done]**
+* Enter game **[done]**
+* Character list **[in progress]**
+* Basic map rendering **[in progress]**
+* Basic game ui **[in progress]**
