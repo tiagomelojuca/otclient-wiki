@@ -41,7 +41,7 @@ like loading character list, enter the game, loading sprites/items, rendering ma
 ## Version 0.4 **(in progress)**
 The main goal of this version is to implement basic ingame interface, complete map rendering and the first game functionality.
 
-* Complete map rendering (walk/talk/magic/shots) **[in progress]**
+* Complete map rendering (walk/talk/effects/shots) **[in progress]**
 * Logout/login again **[in progress]**
 * Public chat window **[in progress]**
 * Reamaning UI widgets:
