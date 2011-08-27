@@ -77,12 +77,17 @@ Complete every remaining features that tibia 8.62 must have.
 * Reamaning UI widgets:
   * TabBar
 * Minimap window
+* Hotkeys
+* Outfit window
 * Battle list
 * Private messages
 * Channels
 * Edit text books
 * Trade
 * Party/skulls
+* Questlog
+* Lights
+* Ignore list
 
 ## Version 0.7
 By now all required features for otserv based on tibia 8.62 is finished, stabilize them and encourage it to be used on any otserv based upto tibia 8.62.
