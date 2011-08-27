@@ -106,7 +106,7 @@ Make last otserv trunk compatible and add remaining functionality.
 * Mount system?
 
 ## Version 0.9
-Time to go beyond, implement things that extends tibia capabilities.
+Time to go beyond, implement features that extend tibia capabilities.
 
 * Particle engine
 * Sounds
