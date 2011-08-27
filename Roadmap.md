@@ -38,7 +38,7 @@ like loading character list, enter the game, loading sprites/items, rendering ma
 * Basic map rendering **[done]**
 * Script console **[done]**
 
-## Version 0.4
+## Version 0.4 **(in progress)**
 The main goal of this version is to implement basic ingame interface, complete map rendering and the first game functionality.
 
 * Complete map rendering (walk/talk/magic/shots) **[in progress]**
