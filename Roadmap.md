@@ -15,7 +15,7 @@ The main goal of this version is to implement basic core functionality.
 * Event dispatcher **[done]**
 * Logger **[done]**
 
-## Version 0.2 **(in progress)**
+## Version 0.2 **(complete)**
 The main goal of this version is to implement a flexible UI system scriptable with LUA.
 
 * UI core structure **[done]**
@@ -26,7 +26,7 @@ The main goal of this version is to implement a flexible UI system scriptable wi
 * Scripting with lua **[done]**
 * Modular system **[done]**
 
-## Version 0.3
+## Version 0.3 **(complete)**
 The main goal of this version is to implement network and first game stuff,
 like loading character list, enter the game, loading sprites/items, rendering map.
 
