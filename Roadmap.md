@@ -62,7 +62,7 @@ By now stabilize what it has, make the code cleaner and rework on anything that 
 * Make first public appearance
 
 ## Version 0.6
-Complete every features that tibia 8.62 has.
+Complete every remaining features that tibia 8.62 must have.
 
 * Minimap window
 * Battle list
@@ -73,7 +73,7 @@ Complete every features that tibia 8.62 has.
 * Party/skulls
 
 ## Version 0.7
-By now all required features is finished, stabilize them.
+By now all required features for otserv based on tibia 8.62 is finished, stabilize them and encourage it to be used on any otserv based upto tibia 8.62.
 
 * Feature freeze
 * Stabilize everything
@@ -81,7 +81,7 @@ By now all required features is finished, stabilize them.
 * Promote client usage
 
 ## Version 0.8
-Complete functionality that last otserv revision has
+Make last otserv trunk compatible and add remaining functionality.
 
 * Cooldowns system?
 * Mount system?
