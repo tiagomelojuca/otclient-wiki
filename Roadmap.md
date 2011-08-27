@@ -41,9 +41,9 @@ like loading character list, enter the game, loading sprites/items, rendering ma
 ## Version 0.4
 The main goal of this version is to implement basic ingame interface, complete map rendering and the first game functionality.
 
-* Complete map rendering (walk/talk/magic/shots)
-* Logout/login again
-* Public chat window
+* Complete map rendering (walk/talk/magic/shots) **[in progress]**
+* Logout/login again **[in progress]**
+* Public chat window **[in progress]**
 * Skills window
 * Inventory window
 * Vip list window
@@ -58,6 +58,7 @@ By now stabilize what it has, make the code cleaner and rework on anything that 
 
 * Feature freeze
 * Stabilize everything
+* Port to Mac OS X
 * Make codes cleaner where it should (mainly scripts)
 * Make first public appearance
 
