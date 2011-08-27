@@ -44,7 +44,7 @@ The main goal of this version is to implement basic ingame interface, complete m
 * Complete map rendering (walk/talk/effects/shots) **[in progress]**
 * Logout/login again **[in progress]**
 * Public chat window **[in progress]**
-* Reamaning UI widgets:
+* Remaining UI widgets:
   * ProgressBar
   * ComboBox
   * TextEdit
@@ -76,7 +76,7 @@ By now stabilize what it has, make the code cleaner and rework on anything that 
 ## Version 0.6
 Complete every remaining features that tibia 8.62 must have.
 
-* Reamaning UI widgets:
+* Remaining UI widgets:
   * TabBar
 * Minimap window
 * Hotkeys
