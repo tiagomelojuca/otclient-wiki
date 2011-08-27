@@ -66,10 +66,10 @@ The main goal of this version is to implement basic ingame interface, complete m
 By now stabilize what it has, make the code cleaner and rework on anything that it should before going public.
 
 * Feature freeze
-* Stabilize everything
+* Stabilize and fix all bugs
 * Port to Mac OS X
 * Make codes cleaner where it should (mainly scripts)
-* Make first public appearance
+* After finished, make first public appearance
 
 ## Version 0.6
 Complete every remaining features that tibia 8.62 must have.
@@ -88,7 +88,7 @@ Complete every remaining features that tibia 8.62 must have.
 By now all required features for otserv based on tibia 8.62 is finished, stabilize them and encourage it to be used on any otserv based upto tibia 8.62.
 
 * Feature freeze
-* Stabilize everything
+* Stabilize and fix all bugs
 * Make codes cleaner
 * Promote client usage
 
@@ -109,6 +109,6 @@ Time to go beyond, implement things that extends tibia capabilities.
 By now everything that was planned is finished, the client is encouraged to be used on any other project.
 
 * Feature freeze
-* Stabilize everything
+* Stabilize and fix all bugs
 * Make codes cleaner
 * Promote client usage
