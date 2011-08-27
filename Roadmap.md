@@ -111,6 +111,7 @@ Time to go beyond, implement features that extend tibia capabilities.
 * Particle engine
 * Sounds
 * Graphics effects
+* Reinvet data/sprites using directories and OTML files
 
 ## Version 1.0
 By now everything that was planned is finished, the client is encouraged to be used on any other project.
