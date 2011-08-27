@@ -61,6 +61,8 @@ The main goal of this version is to implement basic ingame interface, complete m
 * Health/mana bar
 * Attack modes
 * Attack creatures
+* Drag/drop items
+* Use items
 
 ## Version 0.5
 By now stabilize what it has, make the code cleaner and rework on anything that it should before going public.
