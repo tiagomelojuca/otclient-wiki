@@ -1,2 +1,2 @@
 ### Can I use OTClient for commercial purposes?
-Yes, you can! OTClient is made available under the MIT license, thus this means that you can do whatever you want, commercial, non-commercial, closed or open. You are only required to distribute your customized OTClient including a copy of the license copyright notice, it is located in the repository in the file named LICENSE.
+Yes, you can! OTClient is made available under the MIT license, thus this means that you can do whatever you want, commercial, non-commercial, closed or open. You are only required to distribute your customized OTClient included with a copy of the license copyright notice, located in the repository in the file named LICENSE.
