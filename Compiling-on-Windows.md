@@ -19,5 +19,5 @@ Follow these steps to compile the otclient using Mingw32, CMake and DOS prompt c
 * Click `Generate` to generate codeblocks project file
 * Go to the source folder and open otclient.cbp in CodeBlocks
 * Click build
-* Iif no errors were found otclient.exe has been created into the source folder
+* If no errors were found otclient.exe will be in the source folder
 * Now you can **Run it!**
