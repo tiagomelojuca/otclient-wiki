@@ -42,7 +42,12 @@ like loading character list, enter the game, loading sprites/items, rendering ma
 The main goal of this version is to implement basic ingame interface, complete map rendering and the first game functionality.
 
 * Complete map rendering (walk/talk/effects/shots) **[in progress]**
-* Logout/login again **[in progress]**
+  * Outfit/addons **[done]**
+  * Effects **[done]**
+  * Walk **[done, but needs improvements]**
+  * Talk **[in progress]**
+  * Shots **[in progress]**
+* Logout/login again **[done]**
 * Public chat window **[in progress]**
 * Remaining UI widgets:
   * ProgressBar
@@ -52,9 +57,9 @@ The main goal of this version is to implement basic ingame interface, complete m
   * ScrollBar
   * ScrollArea
   * ToolTip
+* Vip list window **[partially]**
 * Skills window
 * Inventory window
-* Vip list window
 * Options window
 * Containers windows
 * Login queue
