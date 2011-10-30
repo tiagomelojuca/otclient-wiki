@@ -11,6 +11,7 @@
 
   # clone, build and run
   git clone git://github.com/edubart/otclient.git
+  git submodule init && git submodule update
   cd otclient
   cmake .
   make
