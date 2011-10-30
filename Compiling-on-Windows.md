@@ -1,4 +1,3 @@
-## Compiling using mingw32
 NOTE: You must use **mignw32 4.6 or greater** to compile
 
 * Install the latest mingw32 using [mingw-get installer](http://sourceforge.net/projects/mingw/files/Automated%20MinGW%20Installer/mingw-get-inst/mingw-get-inst-20110802/mingw-get-inst-20110802.exe/download)
