@@ -1,6 +1,6 @@
 NOTE: You must use **mignw32 4.6 or greater** to compile
 
-* Install the latest mingw32 using [mingw-get installer](http://sourceforge.net/projects/mingw/files/Automated%20MinGW%20Installer/mingw-get-inst/mingw-get-inst-20110802/mingw-get-inst-20110802.exe/download)
+* Install the latest mingw32 using [mingw-get installer](http://sourceforge.net/projects/mingw/files/Automated%20MinGW%20Installer/mingw-get-inst/)
 * Install the [latest CMake](http://www.cmake.org/cmake/resources/software.html)
 * Now you have to add cmake and mingw32 paths to your system environment, follow this steps:
    * If you use Windows XP go into `Control Panel->System->Advanced->Environment Variables`
