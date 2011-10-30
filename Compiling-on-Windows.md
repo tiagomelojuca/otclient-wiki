@@ -8,7 +8,7 @@ NOTE: You must use **mignw32 4.6 or greater** to compile
    * Add a new user variable named `PATH`
    * Set its value to `C:\Program Files\CMake 2.8\bin;C:\MinGW\bin;C:\MinGW\lib;C:\MinGW\include`
    * You might change the above value with your correct mingw32 and cmake installation folder
-* Download the [latest otclient required libraries](http://cloud.github.com/downloads/edubart/otclient/otclient-libs_mingw32.zip)
+* Download the [latest otclient required libraries](http://cloud.github.com/downloads/edubart/otclient/otclient-libs_mingw32-dwarf2.zip)
 * Extract it into `C:\MinGW`
 * Download and extract [latest otclient source code](https://github.com/edubart/otclient/zipball/master)
 * Run CMake GUI (Start->Programs->CMake 2.8->CMake)
