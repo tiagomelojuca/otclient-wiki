@@ -4,7 +4,7 @@ NOTE: You must use **mingw32 4.6 or greater** to compile
 * In the installation process, make sure that you use the **latest catalog** and check **C++ compiler**, otherwise it won't install mingw32-g++ 4.6
 * Install the [latest CMake](http://www.cmake.org/cmake/resources/software.html)
 * Now you have to add cmake and mingw32 paths to your system environment, follow this steps:
-   * If you use Windows XP go into `Control Panel->System->Advanced->Environment Variables`
+   * Go into `Control Panel->System->Advanced->Environment Variables`
    * Add a new user variable named `PATH`
    * Set its value to `C:\Program Files\CMake 2.8\bin;C:\MinGW\bin;C:\MinGW\lib;C:\MinGW\include`
    * You might change the above value with your correct mingw32 and cmake installation folder
