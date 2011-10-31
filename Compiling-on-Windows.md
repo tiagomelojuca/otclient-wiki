@@ -1,7 +1,7 @@
 NOTE: You must use **mingw32 4.6 or greater** to compile
 
 * Download the latest mingw32 [mingw-get installer](http://sourceforge.net/projects/mingw/files/Automated%20MinGW%20Installer/mingw-get-inst/)  and run it 
-* In the installation process, make sure that you use the **latest catalog** and check **C++ compiler**, otherwise it won't install mingw32-g++ 4.6
+* In the installation process, make sure that you use the **latest catalog** and check **C++ compiler**
 * Install the [latest CMake](http://www.cmake.org/cmake/resources/software.html)
 * Now you have to add cmake and mingw32 paths to your system environment, follow this steps:
    * Go into `Control Panel->System->Advanced->Environment Variables`
@@ -21,5 +21,6 @@ NOTE: You must use **mingw32 4.6 or greater** to compile
 * Go to the source folder and open otclient.cbp in CodeBlocks
 * Click build
 * If no errors were found otclient.exe will be in the source folder
-* Make sure that you have a otclient module containing the .spr/.dat files
-* Now you can **run it!**
+* Download the [latest otclient tibiafiles](https://github.com/Baxnie/otclient-tibiafiles/zipball/master) module (it contains the .spr/.dat files)
+* Extract it into modules path, make sure that modules/tibiafiles/Tibia.spr exists
+* Now you can **run otclient.exe**
