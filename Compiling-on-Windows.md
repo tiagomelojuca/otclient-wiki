@@ -1,4 +1,4 @@
-NOTE: You must use **mignw32 4.6 or greater** to compile
+NOTE: You must use **mingw32 4.6 or greater** to compile
 
 * Download the latest mingw32 [mingw-get installer](http://sourceforge.net/projects/mingw/files/Automated%20MinGW%20Installer/mingw-get-inst/)  and run it 
 * In the installation process, make sure that you use the latest catalog and check C++ compiler, otherwise it won't install mingw32-g++ 4.6
