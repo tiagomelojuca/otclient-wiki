@@ -15,9 +15,8 @@ NOTE: You must use **mingw32 4.6 or greater** to compile
 * Click `Browse Source` and set it to the extracted otclient source code
 * Configure the build path to the same folder
 * Click `Configure`, select `CodeBlocks - MinGW Makefiles` and click `Finish`
-* Click `Generate` to generate cmake project files
-* Now if everything is ok, no error appeared
 * Click `Generate` to generate codeblocks project file
+* Now if everything is ok, no error appeared
 * Install the [latest CodeBlocks] (http://www.codeblocks.org/downloads/binaries)
 * Go to the source folder and open otclient.cbp in CodeBlocks
 * Click build
