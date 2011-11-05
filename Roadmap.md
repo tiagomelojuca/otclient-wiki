@@ -50,6 +50,7 @@ The main goal of this version is to implement basic ingame interface, complete m
 * Logout/login again **[done]**
 * Public chat window **[in progress]**
 * Remaining UI widgets:
+  * TabBar
   * ProgressBar
   * ComboBox
   * TextEdit
@@ -68,6 +69,8 @@ The main goal of this version is to implement basic ingame interface, complete m
 * Attack creatures
 * Drag/drop items
 * Use items
+* Private messages
+* Channels
 
 ## Version 0.5
 By now stabilize what it has, make the code cleaner and rework on anything that it should before going public.
@@ -81,14 +84,10 @@ By now stabilize what it has, make the code cleaner and rework on anything that 
 ## Version 0.6
 Complete every remaining features that tibia 8.62 must have.
 
-* Remaining UI widgets:
-  * TabBar
 * Minimap window
 * Hotkeys
 * Outfit window
 * Battle list
-* Private messages
-* Channels
 * Edit text books
 * Trade
 * Party/skulls
