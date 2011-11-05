@@ -1,4 +1,4 @@
-### IMPORT RULES THAT MATTERS
+### ESSENTIAL RULES THAT MUST BE FOLLOWED
 Before implementing anything, you must REALLY follow the next 8 code rules. They are coding techniques that changes the way you will implement anything. There is a logical reason behind each one.
 
 * Avoid pointers at all costs, use only when really needed like for C strings (char*), avoid even for buffers of ints.
