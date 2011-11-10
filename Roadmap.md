@@ -57,14 +57,14 @@ The main goal of this version is to implement basic ingame interface, complete m
   * CheckBox
   * ScrollBar
   * ScrollArea
-  * ToolTip
+  * ToolTip **[done]**
 * Vip list window **[partially]**
-* Skills window
+* Skills window **[partially]**
 * Inventory window
 * Options window
 * Containers windows
 * Login queue
-* Health/mana bar
+* Health/mana bar **[partially]**
 * Attack modes
 * Attack creatures
 * Drag/drop items
