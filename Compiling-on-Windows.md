@@ -1,26 +1,50 @@
-NOTE: You must use **mingw32 4.6 or greater** to compile
+In this this toturial I will explain how you get otclient compiled and running on windows machines.
 
-* Download the latest mingw32 [mingw-get installer](http://sourceforge.net/projects/mingw/files/Automated%20MinGW%20Installer/mingw-get-inst/)  and run it 
-* In the installation process, make sure that you use the **latest catalog** and check **C++ compiler**
-* Install the [latest CMake](http://www.cmake.org/cmake/resources/software.html)
-* Now you have to add cmake and mingw32 paths to your system environment, follow this steps:
-   * Go into `Control Panel->System->Advanced->Environment Variables`
-   * Add a new user variable named `PATH`
-   * Set its value to `C:\Program Files\CMake 2.8\bin;C:\MinGW\bin;C:\MinGW\lib;C:\MinGW\include`
-   * You might change the above value with your correct mingw32 and cmake installation folder
-* Download the [latest otclient required libraries](http://cloud.github.com/downloads/edubart/otclient/otclient-libs_mingw32-dwarf2.zip)
-* Extract it into `C:\MinGW`
-* Download and extract [latest otclient source code](https://github.com/edubart/otclient/zipball/master)
-* Run CMake GUI (Start->Programs->CMake 2.8->CMake)
-* Click `Browse Source` and set it to the extracted otclient source code
-* Configure the build path to the same folder
-* Click `Configure`, select `CodeBlocks - MinGW Makefiles` and click `Finish`
-* Click `Generate` to generate codeblocks project file
-* Now if everything is ok, no error appeared
-* Install the [latest CodeBlocks] (http://www.codeblocks.org/downloads/binaries)
-* Go to the source folder and open otclient.cbp in CodeBlocks
-* Click build
-* If no errors were found otclient.exe will be in the source folder
-* Download the [latest otclient tibiafiles](https://github.com/Baxnie/otclient-tibiafiles/zipball/master) module (it contains the .spr/.dat files)
-* Extract it into modules path, make sure that modules/tibiafiles/Tibia.spr exists
-* Now you can **run otclient.exe**
+### Download what you will need
+
+First downloaded need tools, the following links points to their download pages, make sure to download the latest versions otherwise you might fail in the next steps.
+
+* [MinGW32 installer](http://sourceforge.net/projects/mingw/files/Installer/mingw-get-inst/) **20120426 or greater**
+* [CMake](http://www.cmake.org/cmake/resources/software.html) **2.8.8 or greater**
+* [QtCreator standalone IDE](http://qt.nokia.com/downloads/qt-creator-binary-for-windows) **2.5.0 or greater**
+* [otclient libraries for mingw32](https://github.com/downloads/edubart/otclient/otclient-libs_mingw32-dwarf2.zip)
+* otclient source code
+
+### Install MinGW32
+
+Note that mingw32 must be 4.6 or greater, any older mingw32 that you have already installed will not work because otclient needs C++11 features which are support only by recent compilers.
+Run the downloaded mingw32 installer and in the installation process **make sure that you use the latest catalog when asked** and **check the installation of the C++ compiler**. When finished
+you mingw32 must be installed in C:/MinGW
+
+### Install CMake
+Run the cmake installer, in the installation process you will be asked if you want that cmake configure your PATH variable, say no, this will be manually set in the next steps.
+
+### Install QtCreator
+Just run qtcreator installer. Note that this tutorial uses the standalone IDE which comes without a compiler. If you have a previuosly installed QtCreator SDK (which already comes with MingW32) then you will have to change the compiler in the QtCreator options to the new installed version of MinGW32.
+
+### Install otclient libraries
+Extract the **otclient-libs_mingw32-dwarf2.zip** into *C:/MinGW*. This zip contains 3 folders *lib*, *include* and *bin* witch will be merged into *C:/MinGW/lib*, *C:/MinGW/include* and *C:/MinGW/bin*.
+
+### Configure system PATH variable
+Now that all needed tools is installed, you must configure the system **PATH** variable to make CMake find MinGW32 and the installed libraries, go to:
+{% highlight text %}
+ Control Panel->System->Advanced->Environment Variables
+{% endhighlight %}
+Check if the user variabe **PATH** exists, if not, create one, then set it to:
+
+{% highlight text %}
+C:\Program Files\CMake 2.8\bin;C:\MinGW\bin;C:\MinGW\lib;C:\MinGW\include
+{% endhighlight %}
+
+Make sure that these paths exists and matchs witch the installed ones.
+
+### Download otclient source code
+Go to our [download page](/download.html) and download the desired otclient source code.
+
+### Compile it
+Open CMakeLists.txt found inside otclient source code folder in QtCreator, a box will appears asking for cmake configuration, just click generate,
+if no errors appeared everything is ok and now you can click the build button. Compilation will take a few minutes (because of mingw32 issues compilation on windows is slow).
+
+### Run it
+Before running copy Tibia.dat and Tibia.spr inside modules/game_tibiafiles/ folder, now run!
+

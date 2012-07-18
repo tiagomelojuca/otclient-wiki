@@ -1,14 +1,29 @@
-NOTE: **gcc 4.6** or greater is required to compile, it is the default gcc version in Ubuntu 11.10
-```bash
-  # install requeried dev packages
-  sudo apt-get install build-essential cmake git-core libboost-all-dev
-  sudo apt-get install libphysfs-dev libgmp3-dev liblua5.1-dev libglu1-mesa-dev libgl1-mesa-dev
+### Ubuntu
 
-  # clone, build and run
-  git clone git://github.com/edubart/otclient.git
-  git submodule init && git submodule update
-  cd otclient
-  cmake .
-  make
-  ./otclient
-```
+First install requeried development packages using apt-get
+
+{% highlight sh %}
+sudo apt-get install build-essential cmake git-core
+sudo apt-get install libboost-all-dev libphysfs-dev libgmp3-dev liblua5.1-dev
+sudo apt-get install libglew1.6-dev libvorbis-dev libopenal-dev libz-dev
+{% endhighlight %}
+
+Get the sources, compile and run
+
+{% highlight sh %}
+git clone git://github.com/edubart/otclient.git
+cd otclient
+mkdir build && cd build
+cmake ..
+make
+./otclient
+{% endhighlight %}
+
+<br/>
+### Arch Linux
+
+The project creator @edubart uses Arch Linux at home and maintains an [AUR package for otclient](http://aur.archlinux.org/packages.php?ID=49101), make sure that you have yaourt and just run:
+
+{% highlight sh %}
+yaourt -S otclient-git
+{% endhighlight %}
