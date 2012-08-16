@@ -72,7 +72,7 @@ MainWindow
 * **@onEscape:** configures the MainWindow widgets onEscape callback (function that will be called when you press the escape key).
 
 **Label** This is a label widget that is used for displaying text in most cases. It is a derivative of UILabel class.
-* **id:** This is the id that this commonent will alias itself with for referencing using funcitions such as widget:getChildById("spellsLabel")
+* **id:** This is the id that this commonest will alias itself with for referencing using functions such as widget:getChildById("spellsLabel")
 * **!text:** This is the text that will be displayed by the UILabel widget.
 * **width:** This is the width size of the Label.
 * **anchors.top/bottom/left/right:** Anchors are where the top/bottom/left/right of the Label should be positioned, this is often based on the previous (prev) UI component or the parents anchors.
