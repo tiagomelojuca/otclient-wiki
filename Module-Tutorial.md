@@ -88,7 +88,7 @@ Now that we understand what file is used to register the module and what file(s)
 
 We will be picking apart this code to help better understand it. I went ahead and started the base code for you, here it is:
 ```lua
-Spells = nil
+Spells = {}
 
 spellWindow = nil
 selectedSpell = nil
@@ -132,13 +132,15 @@ end
 ```
 
 The main things I want to focus on here are:
-* The variables (spellWindow, selectedSpell and spells).
-* The functions (storing of functions and discuss what init and terminate are required for).
+* the variables (spellWindow, selectedSpell and spells).
+* and the functions (storing of functions and discuss what init and terminate are required for).
 
 **The variables**  
-Variables within a sandboxed module do not have to be localized with the keyword `local` as they are inside their own module environment. In the module is `sandboxed: false` then you will need to make sure you localize the variable and reset them inside the terminate function (which we will discuss more later).
+Variables within a sandboxed module do not have to be localized with the keyword `local` as they are inside their own module environment. If the module is `sandboxed: false` then you will need to make sure you localize the variable and reset them inside the terminate function (which we will discuss more later).
 
-Inside this spell module we need to have a way of storing the modules window object, we do this by setting the variable `spellWindow` that we have initialized as nil, but that we will setup soon enough. We also need a way of containing what spell the player has selected which means we should store a reference to the spell somehow using the variable `selectedSpell`. Last but not leave and most likely not last! We need to store the list of spells, we do this with the `spells` variable.
+Inside this spell module we need to have a way of storing the modules window object, we do this by setting the variable `spellWindow` that we have initialized as nil, but that we will setup soon enough. We also need a way of containing what spell the player has selected which means we should store a reference to the spell somehow using the variable `selectedSpell`. Last but not least and most likely not last either! We need to store the list of spells and we do this with the `spells` variable.
 
 **The functions**  
-Functions much like variables are contained within sandboxed modules so localization can vary depending on your preferences. If you are not using a `sandboxed: true` module then you will need to make sure you are localizing and storing functions correctly. I personally like to use a table to store my functions within to keep things
+Functions much like variables are contained within sandboxed modules so localization can vary depending on your preferences. If you are not using a `sandboxed: true` module then you will need to make sure you are localizing and storing functions correctly. I personally like to use a table to store my functions within to keep things organized more this is where you see `Spells = {}`. Spells is a table that I will be using to store all the public functions of a module. Private module functions will be localized even though it is not entirely necessary inside a sandboxed module, I like to state when the function is private via the local keyword.
+
+
