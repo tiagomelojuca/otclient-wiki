@@ -22,7 +22,7 @@ So now that you have an understanding of what a module is and somewhat how they 
 ## Starting from scratch
 We are going to create a fresh module from scratch, the first thing you need to do is create the modules directory. The directory name should reflect the overall feature itself, so we will call ours `game_spells` to start creating a new module that will list all the players spells with their appropriate information. We won't be creating this entire module but we can get started to see how it all works.
 
-* `Create a new directory call game\_spells inside the clients /modules directory.`
+* `Create a new directory called game_spells inside the clients /modules directory.`
 
 Inside game\_spells we need to start by adding 3 new base files: spells.lua, spells.otmod and spells.otui for the modules logic, registration, and interface design.
 
