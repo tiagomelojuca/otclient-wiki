@@ -109,7 +109,7 @@ end
 
 function Spells.create(spellList)
   spells = spellList
-  destroy()
+  Spells.destroy()
 
   spellWindow = g_ui.displayUI('spells.otui')
 end
