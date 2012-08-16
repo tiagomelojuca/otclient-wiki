@@ -1,13 +1,13 @@
 I am writing this tutorial to help people get started in contributing to otclient by creating new modules and working within otclient lua environment.
 
 So to start things off I will be covering:
-* the creation of modules
+* the creation of modules.
 * go over some of the basics to working within otclients lua environment.
 * how to efficiently test your modules and scripts.
 
 For this tutorial you will need:
-* otclients latest source code from the git repository https://github.com/edubart/otclient there is a tutorial on how to work with the git repository here.
-* a text editor of some sort (I like to use Sublime Text 2 or Notepad++)
+* otclients latest source code from the git repository https://github.com/edubart/otclient there is a tutorial on how to work with the git repository [here](http://otclient.info/tutorials/git_workflow.html).
+* a text editor of some sort (I like to use [Sublime Text 2](http://www.sublimetext.com/2) or [Notepad++](http://notepad-plus-plus.org/download/v6.1.5.html)).
 * it would also be good to have basic knowledge of lua and programming skills (but this is something you can pick up quickly by practicing).
 
 Now that you have what you need we can get started!
@@ -15,12 +15,12 @@ Now that you have what you need we can get started!
 # Creating a New Module
 Otclient front end runs off what we call 'modules'. Modules are a way of effectively implementing client features separate to each other. If you are considering creating a new module it is advised that you think about what the feature might be and whether or not it would fit into an already existing module (most likely a game\_xxx module), the modules are found in the /modules directory of otclient.
 
-Their are currently two module 'environments': Game and Client. Game modules use the prefix game\_ and should be reflecting features that specifically relate back to the player or game environment features for example game\_outfit or game\_mounts are both features that are used in the game environment. Client modules use the prefix client\_ and should be reflecting features that specifically relate back to the client and the client only. It does not have anything to do with the players game environment, e.g. client\_options and client_skins are only directly related to the clients functionality. This might be a little bit hard to visualize for now but you will pick this up more later.
+Their are currently two module 'environments': **Game** and **Client**. Game modules use the prefix game\_ and should be reflecting features that specifically relate back to the player or game environment features for example game\_outfit or game\_mounts are both features that are used in the game environment. Client modules use the prefix client\_ and should be reflecting features that specifically relate back to the client and the client only. It does not have anything to do with the players game environment, e.g. client\_options and client_skins are only directly related to the clients functionality. This might be a little bit hard to visualize for now but you will pick this up more later.
 
 So now that you have an understanding of what a module is and somewhat how they operate we will go ahead and start creating a new one.
 
 ## Starting from scratch
-We are going to create a fresh module from scratch, the first thing you need to do is create the modules directory. The directory name should reflect the overall feature itself, so we will call ours game\_spells to start creating a new module that will list all the players spells with their appropriate information. We won't be creating this entire module but we can get started to see how it all works.
+We are going to create a fresh module from scratch, the first thing you need to do is create the modules directory. The directory name should reflect the overall feature itself, so we will call ours **game\_spells** to start creating a new module that will list all the players spells with their appropriate information. We won't be creating this entire module but we can get started to see how it all works.
 
 * Create a new directory call game\_spells inside the clients /modules directory.
 
@@ -62,17 +62,17 @@ MainWindow
 ```
 
 **MainWindow** This is the window we will be using for the spell list interface, it is a standard window class derived from `/client_skins/default/styles/windows.otui` styling file it extends Window which extends UIWindow. UIWindow is a the base class of this initialization, it controls the widgets functionality and behaviors.
-* !text: This is the text that is displayed in the MainWindow heading section.
-* size: this is used to set the MainWindows width/height.
-* @onEnter: configures the MainWindow widgets onEnter callback (function that will be called when you press the enter key).
-* @onEscape: configures the MainWindow widgets onEscape callback (function that will be called when you press the escape key).
+* **!text:** This is the text that is displayed in the MainWindow heading section.
+* **size:** this is used to set the MainWindows width/height.
+* **@onEnter:** configures the MainWindow widgets onEnter callback (function that will be called when you press the enter key).
+* **@onEscape:** configures the MainWindow widgets onEscape callback (function that will be called when you press the escape key).
 
 **Label** This is a label widget that is used for displaying text in most cases. It is a derivative of UILabel class.
-* id: This is the id that this commonent with alias itself with for referencing using funcitions such as widget:getChildById("spellsLabel")
-* !text: This is the text that will be displayed by the UILabel widget.
-* width: This is the width size of the Label.
-* anchors.top/bottom/left/right: Anchors are where the top/bottom/left/right of the Label should be positioned, this is often based on the previous (prev) UI component or the parents anchors.
-* margin-top/bottom/left/right: Margins are offsets to the anchors, they will allow you to fine-tune the placement of UI components.
+* **id:** This is the id that this commonent with alias itself with for referencing using funcitions such as widget:getChildById("spellsLabel")
+* **!text:** This is the text that will be displayed by the UILabel widget.
+* **width:** This is the width size of the Label.
+* **anchors.top/bottom/left/right:** Anchors are where the top/bottom/left/right of the Label should be positioned, this is often based on the previous (prev) UI component or the parents anchors.
+* **margin-top/bottom/left/right:** Margins are offsets to the anchors, they will allow you to fine-tune the placement of UI components.
 
 This is just the surface of .otui formatting and styling, there is a lot more that can be done but the main idea is that you get a grasp on how to hierarchy the UI components to display correctly etc. the OTML styling conventions force you to separate the designing of an interface separate to the logic code for example the .lua.
 
@@ -132,8 +132,7 @@ The main things I want to focus on here are:
 **The variables**  
 Variables within a sandboxed module do not have to be localized with the keyword 'local' as they are inside their own module environment. In the module is sandboxed: false then you will need to make sure you localize the variable and reset them inside the terminate function (which we will discuss more later).
 
-Inside this spell module we need to have a way of storing the modules window object, we do this by setting the variable spellWindow that we have initialized as nil, but that we will setup soon enough. We also need a way of containing what spell the player has selected which means we should store a reference to the spell somehow using the variable selectedSpell. Last but not leave and most likely not last! We need to store the list of spells, we do this with the spells variable.
+Inside this spell module we need to have a way of storing the modules window object, we do this by setting the variable `spellWindow` that we have initialized as nil, but that we will setup soon enough. We also need a way of containing what spell the player has selected which means we should store a reference to the spell somehow using the variable `selectedSpell`. Last but not leave and most likely not last! We need to store the list of spells, we do this with the `spells` variable.
 
-The functions
+**The functions**  
 Functions much like variables are contained within sandboxed modules so localization can vary depending on your preferences. If you are not using a sandboxed: true module then you will need to make sure you are localizing and storing functions correctly. I personally like to use a table to store my functions within to keep things
-
