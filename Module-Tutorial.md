@@ -174,6 +174,19 @@ With these main things covered you can pretty much do what you like within the m
 Testing your modules will be an important part of getting them working the way you need. Testing modules can at times be a bit of a challenge so there are a few things that you'll need to know in order to make it easier for you.
 
 ### Reloading your module
-You can 
+You can reload your modules in the client using the Module Manager module ![Module Manager](http://3.imgland.net/qJ2lIKk.png) select your module and click **reload**. Be aware that your init() and terminate() functions will be called on reloading so if you are not initializing and destroying particular things correctly then you may get errors on reloading.
+
+### Helpful test commands
+There are a selection of helpful commands that can be useful for testing found in `/modules/client_terminal/commands.lua` script file. Here is a list of the current commands that you can enter into the client terminal:
+```
+dumpWidgets(widget, level)
+drawDebugBoxes(enable)
+hideMap()
+showMap()
+debugContainersItems()
+debugPosition(enable)
+autoReloadModule(name)
+```
+You can add new commands to your /mod directory in order to avoid making changes to the modules command file.
 
 # Some helpful guidance
