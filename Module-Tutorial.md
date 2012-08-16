@@ -167,3 +167,4 @@ Spells.destroy()
 Spells = nil
 ```
 I stated earlier that we called the function connect inside `init()`. Now that we are terminating the module we need to disconnect the callbacks from the set signal calls. This is done via the `disconnect(...)` function.
+
