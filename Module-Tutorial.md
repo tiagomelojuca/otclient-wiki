@@ -95,14 +95,14 @@ selectedSpell = nil
 spells = {}
 
 function init()
-  connect(g_game, { onOpenSpellWindow = create,
-                    onGameEnd = destroy })
+  connect(g_game, { onOpenSpellWindow = Spells.create,
+                    onGameEnd = Spells.destroy })
 end
 
 function terminate()
-  disconnect(g_game, { onOpenSpellWindow = create,
-                       onGameEnd = destroy })
-  destroy()
+  disconnect(g_game, { onOpenSpellWindow = Spells.create,
+                       onGameEnd = Spells.destroy })
+  Spells.destroy()
   
   Spells = nil
 end
@@ -141,6 +141,18 @@ Variables within a sandboxed module do not have to be localized with the keyword
 Inside this spell module we need to have a way of storing the modules window object, we do this by setting the variable `spellWindow` that we have initialized as nil, but that we will setup soon enough. We also need a way of containing what spell the player has selected which means we should store a reference to the spell somehow using the variable `selectedSpell`. Last but not least and most likely not last either! We need to store the list of spells and we do this with the `spells` variable.
 
 **The functions**  
-Functions much like variables are contained within sandboxed modules so localization can vary depending on your preferences. If you are not using a `sandboxed: true` module then you will need to make sure you are localizing and storing functions correctly. I personally like to use a table to store my functions within to keep things organized more this is where you see `Spells = {}`. Spells is a table that I will be using to store all the public functions of a module. Private module functions will be localized even though it is not entirely necessary inside a sandboxed module, I like to state when the function is private via the local keyword.
+Functions much like variables are contained within sandboxed modules so localization can vary depending on your preferences. If you are not using a `sandboxed: true` module then you will need to make sure you are localizing and storing functions correctly. I personally like to use a table to store my functions within to keep things organized more this is where you see `Spells = {}`. Spells is a table that I will be using to store all the public functions of a module. Private module functions will be localized even though it is not entirely necessary inside a sandboxed module, I prefer to state when the function is private via the local keyword.
 
-
+So what are the functions init() and terminate() used for?  
+As you might have already noticed inside the spells.otmod code you will see:
+```lua
+@onLoad: init()
+@onUnLoad: terminate()
+```
+### init()
+The init function is a function that is called when otclient attempts to load the registered module using onLoad signalcall. Inside this function you should be initializing all the components that are required my your module. As you can see inside spells.lua we are calling a function `connect(...)`:
+```lua
+connect(g_game, { onOpenSpellWindow = Spells.create,
+                    onGameEnd = Spells.destroy })
+```
+This connect function is used to set a callback for certain signal calls, in this case onOpenSpellWindow will call the `Spells.create` function, which of course has out spell window creation code.
