@@ -1,13 +1,13 @@
 I am writing this tutorial to help people get started in contributing to otclient by creating new modules and working within otclient lua environment.
 
-So to start things off I will be covering:
+**So to start things off I will be covering:**
 * the creation of modules.
 * go over some of the basics to working within otclients lua environment.
 * how to efficiently test your modules and scripts.
 
-For this tutorial you will need:
-* otclients latest source code from the git repository https://github.com/edubart/otclient there is a tutorial on how to work with the git repository [here](http://otclient.info/tutorials/git_workflow.html).
-* a text editor of some sort (I like to use [Sublime Text 2](http://www.sublimetext.com/2) or [Notepad++](http://notepad-plus-plus.org/download/v6.1.5.html)).
+**For this tutorial you will need:**
+* otclients latest source code from the git repository [otclient repo](https://github.com/edubart/otclient). There is a tutorial on how to work with the git repository [here](http://otclient.info/tutorials/git_workflow.html).
+* a text editor of some sort (I like to use [Sublime Text 2](http://www.sublimetext.com/2) or [Notepad++](http://notepad-plus-plus.org/download/v6.1.5.html)) just be sure to read the [code conventions](https://github.com/edubart/otclient/wiki/OTClient-Coding-Style) first too.
 * it would also be good to have basic knowledge of lua and programming skills (but this is something you can pick up quickly by practicing).
 
 Now that you have what you need we can get started!
@@ -20,17 +20,17 @@ Their are currently two module 'environments': **Game** and **Client**. Game mod
 So now that you have an understanding of what a module is and somewhat how they operate we will go ahead and start creating a new one.
 
 ## Starting from scratch
-We are going to create a fresh module from scratch, the first thing you need to do is create the modules directory. The directory name should reflect the overall feature itself, so we will call ours **game\_spells** to start creating a new module that will list all the players spells with their appropriate information. We won't be creating this entire module but we can get started to see how it all works.
+We are going to create a fresh module from scratch, the first thing you need to do is create the modules directory. The directory name should reflect the overall feature itself, so we will call ours `game_spells` to start creating a new module that will list all the players spells with their appropriate information. We won't be creating this entire module but we can get started to see how it all works.
 
-* Create a new directory call game\_spells inside the clients /modules directory.
+* `Create a new directory call game\_spells inside the clients /modules directory.`
 
 Inside game\_spells we need to start by adding 3 new base files: spells.lua, spells.otmod and spells.otui for the modules logic, registration, and interface design.
 
-* Create 3 new base files spells.lua, spells.otmod and spells.otui inside /modules
+* `Create 3 new base files spells.lua, spells.otmod and spells.otui inside /modules`
 
 You might already know what the .lua file represents but what are these new extensions .otmod and .otui?
-
-**.otmod** file is the file that is used to initialize the module within otclient, it is like a register in that it will register the module for use inside the client. This file generally has a structure like this:
+### .otmod
+.otmod file is the file that is used to initialize the module within otclient, it is like a register in that it will register the module for use inside the client. This file generally has a structure like this:
 ```lua
 Module
   name: game_spells -- name of the module (generally the same name as the modules directory.
@@ -42,7 +42,8 @@ Module
   @onLoad: init() -- this is where you define the initialization function of the module (we will cover this more later).
   @onUnload: terminate() -- this is where you define the termination function of the module (we will cover this more later)
 ```
-**.otui** file is the file that is used to create the modules user interface. This is a custom made styling language specifically designed for otclient called OTML, it feels a lot like CSS formatting for those of you who have experience in webdesign. The typical structure of a .otui file looks like this (this is the start base file, not completed):
+### .otui
+.otui file is the file that is used to create the modules user interface. This is a custom made styling language specifically designed for otclient called OTML, it feels a lot like CSS formatting for those of you who have experience in webdesign. The typical structure of a .otui file looks like this (this is the start base file, not completed):
 ```css
 MainWindow
   !text: tr('Spells')
@@ -61,7 +62,7 @@ MainWindow
     margin-left: 5
 ```
 
-**MainWindow** This is the window we will be using for the spell list interface, it is a standard window class derived from `/client_skins/default/styles/windows.otui` styling file it extends Window which extends UIWindow. UIWindow is a the base class of this initialization, it controls the widgets functionality and behaviors.
+**MainWindow** This is the window we will be using for the spell list interface, it is a standard window class derived from `/client_skins/default/styles/windows.otui` styling file it extends Window which extends UIWindow. UIWindow is a base class of this initialization, it controls the widgets functionality and behaviors.
 * **!text:** This is the text that is displayed in the MainWindow heading section.
 * **size:** this is used to set the MainWindows width/height.
 * **@onEnter:** configures the MainWindow widgets onEnter callback (function that will be called when you press the enter key).
@@ -78,9 +79,9 @@ This is just the surface of .otui formatting and styling, there is a lot more th
 
 Now that we understand what file is used to register the module and what file(s) are used to build the modules UI we can delve into the modules logic code and try understand how it all works together. The file spells.lua is the file that contains the modules logic code. This is where the spells will be populated and the handling of spell selection and spell display will be controlled.
 
-* Open the file spells.lua and copy in the following base code to get started. We will be picking apart this code to help better understand it.
+* `Open the file spells.lua and copy in the following base code to get started.`
 
-I went ahead and started the base code for you, here it is:
+We will be picking apart this code to help better understand it. I went ahead and started the base code for you, here it is:
 ```lua
 Spells = nil
 
@@ -130,9 +131,9 @@ The main things I want to focus on here are:
 * The functions (storing of functions and discuss what init and terminate are required for).
 
 **The variables**  
-Variables within a sandboxed module do not have to be localized with the keyword 'local' as they are inside their own module environment. In the module is sandboxed: false then you will need to make sure you localize the variable and reset them inside the terminate function (which we will discuss more later).
+Variables within a sandboxed module do not have to be localized with the keyword `local` as they are inside their own module environment. In the module is `sandboxed: false` then you will need to make sure you localize the variable and reset them inside the terminate function (which we will discuss more later).
 
 Inside this spell module we need to have a way of storing the modules window object, we do this by setting the variable `spellWindow` that we have initialized as nil, but that we will setup soon enough. We also need a way of containing what spell the player has selected which means we should store a reference to the spell somehow using the variable `selectedSpell`. Last but not leave and most likely not last! We need to store the list of spells, we do this with the `spells` variable.
 
 **The functions**  
-Functions much like variables are contained within sandboxed modules so localization can vary depending on your preferences. If you are not using a sandboxed: true module then you will need to make sure you are localizing and storing functions correctly. I personally like to use a table to store my functions within to keep things
+Functions much like variables are contained within sandboxed modules so localization can vary depending on your preferences. If you are not using a `sandboxed: true` module then you will need to make sure you are localizing and storing functions correctly. I personally like to use a table to store my functions within to keep things
