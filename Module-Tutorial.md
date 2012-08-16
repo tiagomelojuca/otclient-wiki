@@ -176,6 +176,9 @@ Testing your modules will be an important part of getting them working the way y
 ### Reloading your module
 You can reload your modules in the client using the Module Manager module ![Module Manager](http://3.imgland.net/qJ2lIKk.png) select your module and click **reload**. Be aware that your init() and terminate() functions will be called on reloading so if you are not initializing and destroying particular things correctly then you may get errors on reloading.
 
+**Important Note:** There are some rare changes that might not be reloaded correctly with the module manager, things such as .otui @ changes (e.g. @onClick: edits). 
+There may be some other changes that do not reload correctly, but for the most part it works fine. If you find yourself having weird errors attempted to do a full restart of the client to ensure its not a reloading issue.
+
 ### Helpful test commands
 There are a selection of helpful commands that can be useful for testing found in `/modules/client_terminal/commands.lua` script file. Here is a list of the current commands that you can enter into the client terminal:
 ```
@@ -189,4 +192,7 @@ autoReloadModule(name)
 ```
 You can add new commands to your /mod directory in order to avoid making changes to the modules command file.
 
+You should always ensure that your modules are thoroughly tested before creating pull requests to the main git repository. These tips can be very useful in the testing phases!
+
 # Some helpful guidance
+Global functions and constants variables can be found in the modules/corelib and modules/gamelib directories. Please give careful consideration to what you put into these files and if possible try to avoid it. Follow the rule ```"Keep everything to their own cause, and only that cause"```. 
