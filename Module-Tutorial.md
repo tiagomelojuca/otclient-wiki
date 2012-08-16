@@ -168,3 +168,9 @@ Spells = nil
 ```
 I stated earlier that we called the function connect inside `init()`. Now that we are terminating the module we need to disconnect the callbacks from the set signal calls. This is done via the `disconnect(...)` function.
 
+With these main things covered you can pretty much do what you like within the module. You can carefully construct and craft it to suit what you need. Follow on through the tutorial to extend your knowledge of creating modules and also working within otclients module environment.
+
+# Some helpful guidance
+
+
+* How to test your modules effectively
