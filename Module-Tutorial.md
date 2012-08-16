@@ -195,4 +195,4 @@ You can add new commands to your /mod directory in order to avoid making changes
 You should always ensure that your modules are thoroughly tested before creating pull requests to the main git repository. These tips can be very useful in the testing phases!
 
 # Some helpful guidance
-Global functions and constants variables can be found in the modules/corelib and modules/gamelib directories. Please give careful consideration to what you put into these files and if possible try to avoid it. Follow the rule "Keep everything to their own cause, and only that cause".
+While developing your module be sure to give it lots of thought about how it is going to work and whether or not you can merge the feature to an already existing module. Also global functions and constants variables can be found in the modules/corelib and modules/gamelib directories. Please give careful consideration to what you put into these files and if possible try to avoid it. Follow the rule "Keep everything to their own cause, and only that cause".
