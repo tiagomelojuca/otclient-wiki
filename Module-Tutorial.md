@@ -170,7 +170,10 @@ I stated earlier that we called the function connect inside `init()`. Now that w
 
 With these main things covered you can pretty much do what you like within the module. You can carefully construct and craft it to suit what you need. Follow on through the tutorial to extend your knowledge of creating modules and also working within otclients module environment.
 
+## How to test your modules effectively
+Testing your modules will be an important part of getting them working the way you need. Testing modules can at times be a bit of a challenge so there are a few things that you'll need to know in order to make it easier for you.
+
+### Reloading your module
+You can 
+
 # Some helpful guidance
-
-
-* How to test your modules effectively
