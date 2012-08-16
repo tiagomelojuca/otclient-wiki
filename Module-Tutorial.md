@@ -150,9 +150,20 @@ As you might have already noticed inside the spells.otmod code you will see:
 @onUnLoad: terminate()
 ```
 ### init()
-The init function is a function that is called when otclient attempts to load the registered module using onLoad signalcall. Inside this function you should be initializing all the components that are required my your module. As you can see inside spells.lua we are calling a function `connect(...)`:
+The init function is a function that is called when otclient attempts to load the registered module using onLoad signal call. Inside this function you should be initializing all the components that are required by your module. As you can see inside spells.lua we are calling a function within `init()`:
 ```lua
 connect(g_game, { onOpenSpellWindow = Spells.create,
                     onGameEnd = Spells.destroy })
 ```
-This connect function is used to set a callback for certain signal calls, in this case onOpenSpellWindow will call the `Spells.create` function, which of course has out spell window creation code.
+This connect function is used to set a callback for certain signal calls, in this case onOpenSpellWindow will call the `Spells.create` function, which of course has our spell window creation code (or at lease it will soon!).
+
+### terminate()
+The terminate function is a function that is called when otclient attempts to unload the registered module using onUnLoad signal call. Inside this function you should be destroying and reseting variables that need to be cleared on termination of the module. Remember that not all variables will need to be reset, but particular ones such as widget references and the Spells table are all required to be reset onUnLoad. As you can see inside spells.lua we are calling and setting a number of things within terminate():
+```lua
+disconnect(g_game, { onOpenSpellWindow = Spells.create,
+                       onGameEnd = Spells.destroy })
+Spells.destroy()
+  
+Spells = nil
+```
+I stated earlier that we called the function connect inside `init()`. Now that we are terminating the module we need to disconnect the callbacks from the set signal calls. This is done via the `disconnect(...)` function.
