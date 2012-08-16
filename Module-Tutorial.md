@@ -44,6 +44,7 @@ Module
 ```
 
 * `Copy the .otmod code above into your spells.otmod file and remove the -- comments.`
+
 ### .otui
 .otui file is the file that is used to create the modules user interface. This is a custom made styling language specifically designed for otclient called OTML, it feels a lot like CSS formatting for those of you who have experience in webdesign. The typical structure of a .otui file looks like this (this is the start base file, not completed):
 ```css
