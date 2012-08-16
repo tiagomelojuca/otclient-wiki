@@ -26,11 +26,11 @@ We are going to create a fresh module from scratch, the first thing you need to 
 
 Inside game\_spells we need to start by adding 3 new base files: spells.lua, spells.otmod and spells.otui for the modules logic, registration, and interface design.
 
-* `Create 3 new base files spells.lua, spells.otmod and spells.otui inside /modules`
+* `Create 3 new base files spells.lua, spells.otmod and spells.otui inside /modules/game_spells`
 
 You might already know what the .lua file represents but what are these new extensions .otmod and .otui?
 ### .otmod
-.otmod file is the file that is used to initialize the module within otclient, it is like a register in that it will register the module for use inside the client. This file generally has a structure like this:
+.otmod file is the file that is used to initialize the module within otclient, it is like a register in that it will register the module for use inside the client. This file generally has a structure like this (I have added comments, if you copy this code be sure to remove the -- comments):
 ```lua
 Module
   name: game_spells -- name of the module (generally the same name as the modules directory.
@@ -42,6 +42,8 @@ Module
   @onLoad: init() -- this is where you define the initialization function of the module (we will cover this more later).
   @onUnload: terminate() -- this is where you define the termination function of the module (we will cover this more later)
 ```
+
+* `Copy the .otmod code above into your spells.otmod file and remove the -- comments.`
 ### .otui
 .otui file is the file that is used to create the modules user interface. This is a custom made styling language specifically designed for otclient called OTML, it feels a lot like CSS formatting for those of you who have experience in webdesign. The typical structure of a .otui file looks like this (this is the start base file, not completed):
 ```css
@@ -75,7 +77,9 @@ MainWindow
 * **anchors.top/bottom/left/right:** Anchors are where the top/bottom/left/right of the Label should be positioned, this is often based on the previous (prev) UI component or the parents anchors.
 * **margin-top/bottom/left/right:** Margins are offsets to the anchors, they will allow you to fine-tune the placement of UI components.
 
-This is just the surface of .otui formatting and styling, there is a lot more that can be done but the main idea is that you get a grasp on how to hierarchy the UI components to display correctly, etc. the OTML styling conventions force you to separate the designing of an interface separate to the logic code for example the .lua.
+This is just the surface of .otui formatting and styling, there is a lot more that can be done but the main idea is that you get a grasp on how to hierarchy the UI components to display correctly, etc. the OTML styling conventions force you to keep the designing of an interface separate to the logic code for example the .lua.
+
+* `Copy the otui code above into your spells.otui file`
 
 Now that we understand what file is used to register the module and what file(s) are used to build the modules UI we can delve into the modules logic code and try understand how it all works together. The file spells.lua is the file that contains the modules logic code. This is where the spells will be populated and the handling of spell selection and spell display will be controlled.
 
