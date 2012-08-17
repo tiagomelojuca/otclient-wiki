@@ -27,14 +27,14 @@ Extract the **otclient-libs_mingw32-dwarf2.zip** into *C:/MinGW*. This zip conta
 
 ### Configure system PATH variable
 Now that all needed tools is installed, you must configure the system **PATH** variable to make CMake find MinGW32 and the installed libraries, go to:
-{% highlight text %}
+```
  Control Panel->System->Advanced->Environment Variables
-{% endhighlight %}
+```
 Check if the user variabe **PATH** exists, if not, create one, then set it to:
 
-{% highlight text %}
+```
 C:\Program Files\CMake 2.8\bin;C:\MinGW\bin;C:\MinGW\lib;C:\MinGW\include
-{% endhighlight %}
+```
 
 Make sure that these paths exists and matchs witch the installed ones.
 
@@ -47,4 +47,3 @@ if no errors appeared everything is ok and now you can click the build button. C
 
 ### Run it
 Before running copy Tibia.dat and Tibia.spr inside modules/game_tibiafiles/ folder, now run!
-
