@@ -14,9 +14,8 @@ users can create their own game interfaces and functionality on top of the origi
 
 ## General Resources
 * [[FAQ]]
-* [[Roadmap]]
 
 ## Developing Resources
 * [[OTClient Coding Style]]
-* [[Compiling on Ubuntu]]
+* [[Compiling on Linux]]
 * [[Compiling on Windows]]
