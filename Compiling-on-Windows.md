@@ -12,7 +12,7 @@ First downloaded need tools, the following links points to their download pages,
 
 ### Install MinGW32
 
-Note that mingw32 must be 4.6 or greater, any older mingw32 that you have already installed will not work because otclient needs C++11 features which are support only by recent compilers.
+Note that mingw32 must be 4.7 or greater, any older mingw32 that you have already installed will not work because otclient needs C++11 features which are support only by recent compilers.
 Run the downloaded mingw32 installer and in the installation process **make sure that you use the latest catalog when asked** and **check the installation of the C++ compiler**. When finished
 you mingw32 must be installed in C:/MinGW
 
