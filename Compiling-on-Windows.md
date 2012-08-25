@@ -5,7 +5,7 @@ In this this toturial I will explain how you get otclient compiled and running o
 There are several tools you need to compile the project, each of which is listed next to their link here:
 
 * [CMake](http://www.cmake.org/cmake/resources/software.html) **2.8.8 or greater**
-* [CodeBlocks](http://www.codeblocks.org/downloads/26) **download version which contains MinGW**
+* [CodeBlocks](http://www.codeblocks.org/downloads/26) **version which contains MinGW**
 * [otclient libraries for mingw32](https://github.com/downloads/edubart/otclient/otclient-libs_mingw32-dwarf2.zip)
 * otclient source code
 
