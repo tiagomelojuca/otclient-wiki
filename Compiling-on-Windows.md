@@ -44,4 +44,4 @@ Run the **CMake-gui.exe** located in **\Program Files\CMake 2.8\bin**, and speci
 ### Compile it
 Open the said generated Codeblocks Project file (**otclient.cbp**) by CMake with CodeBlocks, and script away! To compile, press Ctrl-F9.
 
-_ **--** Make sure to copy Tibia.dat and Tibia.spr inside modules/game_tibiafiles/ folder before running the client._
+**-- Make sure to copy Tibia.dat and Tibia.spr inside modules/game_tibiafiles/ folder before running the client**
