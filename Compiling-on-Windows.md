@@ -20,7 +20,7 @@ Run the CodeBlocks installer, through which you must install MinGW as well.
 _**--** Make sure you install MinGW as well, otherwise things might go wrong."_
 
 ### Install otclient libraries
-Extract the **otclient-libs_mingw32-dwarf2.zip** into *C:/MinGW*. This zip contains 3 folders *lib*, *include* and *bin* witch will be merged into *C:/MinGW/lib*, *C:/MinGW/include* and *C:/MinGW/bin*.
+Extract the **otclient-libs_mingw32-dwarf2.zip** into *C:/Program Files/CodeBlocks/MinGW*. This zip contains 3 folders *lib*, *include* and *bin* witch will be merged into *./MinGW/lib*, *./MinGW/include* and *./MinGW/bin*.
 
 ### Configure system PATH variable
 Now that all needed tools is installed, you must configure the system **PATH** variable to make CMake find MinGW32 and the installed libraries, go to:
