@@ -21,7 +21,7 @@ Run the CMake installer, should in the installation process you get asked if you
 ### Install CodeBlocks
 Run the CodeBlocks installer, through which you must install MinGW as well. 
 
-_**--** Make sure you don't install MinGW as well, otherwise things might go wrong."_
+_**--** Make sure you don't install MinGW as well, otherwise things might go wrong._
 
 ### Install otclient libraries
 Extract the **otclient-libs_mingw32-dwarf2.zip** into *C:/Program Files/CodeBlocks/MinGW*. This zip contains 3 folders *lib*, *include* and *bin* witch will be merged into *./MinGW/lib*, *./MinGW/include* and *./MinGW/bin*.
