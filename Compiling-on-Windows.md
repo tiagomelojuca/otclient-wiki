@@ -48,4 +48,4 @@ Run the **CMake-gui.exe** located in **\Program Files\CMake 2.8\bin**, and speci
 ### Scripting and compiling it
 Open the said generated Codeblocks Project file (**otclient.cbp**) by CMake with CodeBlocks, and script away! To compile, you must first configure the folder of MinGW32, by going to **Settings** > **Compiler And Debugger...** > **Toolchain Executables**.
 
-**-- Make sure to copy Tibia.dat and Tibia.spr inside OTClient/data/ folder before running the client**
+**-- Make sure to copy Tibia.dat and Tibia.spr inside modules/game_tibiafiles/ folder before running the client**
