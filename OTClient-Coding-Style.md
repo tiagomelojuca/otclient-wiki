@@ -7,7 +7,7 @@ Before implementing anything, you must REALLY follow the next 8 code rules. They
 * Never use **delete** keyword, and when I say never, I mean NEVER. If you think you need to use delete you didn't read the previous two rules.
 * Pass small objects like Position, Rect, std::string, by reference.
 * Include only declarations from other objects in headers files, never definitions, you can see the declarations.h pattern in the source.
-* If you think anything can go wrong on your code, you can abuse of asserts for checking.
+* If you think anything can go wrong on your code, you can use **assert** or throw an exception for checking.
 * C++0x comes with a varieties of new utilities, you can and you are encouraged to use them.
 
 ### Indentation
@@ -71,6 +71,8 @@ Before implementing anything, you must REALLY follow the next 8 code rules. They
 
     for(std::map<int, std::string>::iterator it = myMap.begin(); it != myMap.end(); it++) // Wrong
     for(auto it = myMap.begin(); it != myMap.end(); ++it) // Correct
+    or
+    for(auto pair : myMap) // Correct
 ```
 
 * Use C++0x for each when you can:
@@ -82,7 +84,7 @@ Before implementing anything, you must REALLY follow the next 8 code rules. They
 
 ### Sources files
 * If you need any STL header use global.h, avoid flooding includes.
-* All sources files must have the license and copyright note on top.
+* All sources files must have the license and copyright notice on top.
 * Only include needed headers.
 * Whenever is possible, declare classes names instead of including it's headers.
 
@@ -90,13 +92,13 @@ Before implementing anything, you must REALLY follow the next 8 code rules. They
     // Wrong
     #include "foo.h"
     class Dummy {
-        SomeClass *m_foo;
+        Foo *m_foo;
     };
 
     // Correct
     class Foo;
     class Dummy {
-        SomeClass *m_foo;
+        Foo *m_foo;
     };
 ```
 
