@@ -23,4 +23,4 @@ These are the options I use whenever building a project (most of those ones are 
   See also: [CMake cmd options](http://linux.die.net/man/1/cmake)
   Try: cmake --help
 
-This is all for now folks, I might be adding more later on.
+This is it for now folks, I might be adding more later on.
