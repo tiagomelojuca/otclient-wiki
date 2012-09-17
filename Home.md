@@ -20,3 +20,4 @@ users can create their own game interfaces and functionality on top of the origi
 * [[Compiling on Linux]]
 * [[Compiling on Windows]]
 * [[Module Tutorial]]
+* [[CMake useful options]]
