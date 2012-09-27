@@ -15,7 +15,6 @@
 * The Native way in windows, is obtaining an installer through [here](http://git-scm.com/download/win)
 
 Okay, now you're ready to dive in.
-** Step 1**
 * Open up Git Shell.
 * Obtain a copy of otclient's source code:
 ```sh
