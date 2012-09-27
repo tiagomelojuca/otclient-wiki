@@ -72,6 +72,7 @@ And then, commit it with:
 Replace vim with your text editor.
 
 Here's an image  to demonstrate how this is done:
+
 ![add](http://i.imgur.com/WZnuR.png)
 
 * Step 3, make a .patch file
@@ -90,6 +91,7 @@ Note: this step is optional (the sending email thing), alternatively you can use
 Note: Read the manual page for git send-email if you're wondering how this is done.
 
 Job done!
+
 **Note**: It's the developer freedom to choose whether your patch should be commited to the family tree or not, it really depends on how useful your patch is.
 
 ## Bonus
