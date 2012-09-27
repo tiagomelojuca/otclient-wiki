@@ -14,6 +14,20 @@
 * Obtaining it by your package manager (Linux or Cygwin)
 * The Native way in windows, is obtaining an installer through [here](http://git-scm.com/download/win)
 
+**Configuring git**
+* Configure your email address and github user:
+```sh
+   git config --global user.name="your name here"
+   git config --global user.email="your email here"
+```
+* (Optional) Configure email sending stuff:
+```sh
+   git config --global sendemail.smtpencryption=tls
+   git config --global sendemail.smtpserver=smtp.gmail.com
+   git config --global sendemail.smtpuser=example@gmail.com
+   git config --global sendemail.smtpserverport=587
+```
+
 Okay, now you're ready to dive in.
 * Open up Git Shell.
 * Obtain a copy of otclient's source code:
