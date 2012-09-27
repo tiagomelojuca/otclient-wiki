@@ -77,7 +77,10 @@ Here's an image  to demonstrate how this is done:
 * Step 3, make a .patch file
 
 Making a patch file is a simple process, and is done like so:
-![patch](http://i.imgur.com/9pCvF.png)
+```sh
+   git format-patch master..tutorial
+```
+Which should output the filename the patch saved to, the file contains your changes.
 
 * Step 4, now, send the patch to some developer.
 ![send_patch](http://i.imgur.com/KIttX.png)
@@ -90,7 +93,13 @@ Job done!
 **Note**: It's the developer freedom to choose whether your patch should be commited to the family tree or not, it really depends on how useful your patch is.
 
 ## Bonus
-It's good to write the signed-off-by line in your patch, to tell that this is your code, etc.  It has _no use_ but it's still useful to write it:
+* It's good to write the signed-off-by line in your patch, to tell that this is your code, etc.  It has _no use_ but it's still useful to write it:
 ![signedoffby](http://i.imgur.com/Kpfgh.png)
+
+* See if your patch is good:
+```sh
+   git apply --check <patch file>
+```
+  This will tell you whether your patch file is formatted good or not. Remember to do this before sending!
 
 Happy hacking!
