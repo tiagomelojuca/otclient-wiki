@@ -2,7 +2,7 @@ So, the main page got you here and you want to configure your compilation proces
 These are the options I use whenever building a project (most of those ones are builtin otclient's CMakeLists.txt).
 
 ### Options list and what each do
-* CRASH_HANDLER - This helps generate crash reports when the application crashes whether it's compiled with debug mode or even release (*Note*: Release with debug info, see CMAKE_BUILD_TYPE).  It's also very helpful to send it to the developers when you encounter a crash and possibly some code.
+* CRASH_HANDLER - This helps generate crash reports when the application crashes whether it's compiled with debug mode or even release (**Note**: Release with debug info, see CMAKE_BUILD_TYPE).  It's also very helpful to send it to the developers when you encounter a crash and possibly some code.
 * LUAJIT - This enables compiling with luajit, lua is way slower than luajit.  We do not use lua 5.2 features and that's what luajit is missing.
 * USE_STATIC_LIBS - This option is really useful when releasing an executable.
    see also [GCC Linker](http://gcc.gnu.org/onlinedocs/gcc/Link-Options.html)
