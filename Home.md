@@ -17,7 +17,7 @@ users can create their own game interfaces and functionality on top of the origi
 
 ## Developing Resources
 * [[OTClient Coding Style]]
-* [[Contributing]]
+* [[Submitting Patches]]
 * [[Compiling on Linux]]
 * [[Compiling on Windows]]
 * [[Module Tutorial]]
