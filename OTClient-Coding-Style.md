@@ -86,7 +86,7 @@ Before implementing anything, you must REALLY follow the next 8 code rules. They
 * If you need any STL header use global.h, avoid flooding includes.
 * All sources files must have the license and copyright notice on top.
 * Only include needed headers.
-* Whenever is possible, declare classes names instead of including it's headers.
+* Whenever is possible, forward declare classes names instead of including it's headers.
 
 ```cpp
     // Wrong
