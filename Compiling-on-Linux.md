@@ -1,6 +1,6 @@
-### Ubuntu
+### Ubuntu 12.10
 
-First install requeried development packages using apt-get
+First install required development packages using apt-get
 
 ```sh
 sudo apt-get install build-essential cmake git-core
