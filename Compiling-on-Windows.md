@@ -52,4 +52,4 @@ Open the said generated Codeblocks Project file (**otclient.cbp**) by CMake with
 
 ### Problems?
 If your CodeBlocks (or CMake) complains it cannot find GCC or any working compiler, configure CodeBlock's compiler via settings there.
-Any other problem should be posted in [Issues](https://github.com/edubart/otclient/issues) or alternatively IRC (see README), don't spam! Ask, wait, try to solve it yourself until you get an answer, do ***NOT*** re-ask.
+Any other problem should be posted in [otclient's otland forum](http://otland.net/f494/) or alternatively IRC (see README), don't spam! Ask, wait, try to solve it yourself until you get an answer, do ***NOT*** re-ask.
