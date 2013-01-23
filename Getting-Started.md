@@ -6,3 +6,12 @@ For example: /data/things/860/ this will check for the 8.60 tibia dat/spr files 
 Now you can use that client version by selecting it in the login process:
 
 ![Version](https://dl.dropbox.com/u/49948294/wiki/getting_started/login.png)
+
+To login to the server you would like to play you can just enter in the **server** and the **port** (like so in the article above)
+
+### Top Menu
+There are menu buttons for the client management and game features located at the top of the client window.
+
+![Client Options](https://dl.dropbox.com/u/49948294/wiki/getting_started/client_options.png)
+
+![Game Options](https://dl.dropbox.com/u/49948294/wiki/getting_started/game_options.png)
