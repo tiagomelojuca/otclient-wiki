@@ -27,7 +27,9 @@ To login to the server you would like to play you can just enter in the **server
 ### Top Menu
 There are menu buttons for the client management and game features located at the top of the client window.
 
-![Client Options](https://dl.dropbox.com/u/49948294/wiki/getting_started/client_options.png) ![Game Options](https://dl.dropbox.com/u/49948294/wiki/getting_started/game_options.png)
+![Client Options](https://dl.dropbox.com/u/49948294/wiki/getting_started/client_options.png)
+
+![Game Options](https://dl.dropbox.com/u/49948294/wiki/getting_started/game_options.png)
 
 For any of the traditional game features, this is where they will be located.
 
