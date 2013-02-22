@@ -2,9 +2,9 @@ This is how we compile otclient on Mac OS X, we use XQuartz to compile and run o
 
 ## Requirements
 * Mac OS X 10.6 or higher
-* [XCode](https://developer.apple.com/xcode/)
-* [Homebrew](http://mxcl.github.com/homebrew/)
+* [XCode](https://developer.apple.com/xcode/) (with Command Line Tools for Xcode)
 * [XQuartz](http://xquartz.macosforge.org/landing/)
+* [Homebrew](http://mxcl.github.com/homebrew/)
 
 You should install all those requirements first, I will not cover how to install them in this tutorial, you do that by yourself.
 
@@ -30,4 +30,3 @@ cd build
 cmake ..
 make -j4
 ```
-
