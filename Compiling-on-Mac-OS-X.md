@@ -1,4 +1,4 @@
-This is how we compile otclient on Mac OS X, we use XQuartz to compile and run otclient, which is a X11 implementation for X11, but not the native Cocoa API. This means that users will need XQuartz installed too to run the client. You will need to know the basics of how using terminal in Mac OS to use this tutorial.
+This is how we compile otclient on Mac OS X, we use XQuartz to compile and run otclient, which is a X11 implementation for Mac OS, we do not use the native Cocoa API. This means that users will need XQuartz installed too to run the client. You will need to know the basics on how using terminal in Mac OS to follow this tutorial.
 
 ## Requirements
 * Mac OS X 10.6 or higher
@@ -20,7 +20,7 @@ brew install glew
 brew install physfs
 ```
 
-### Cloning and compiling 
+## Cloning and compiling 
 
 ```
 git clone git://github.com/edubart/otclient.git
