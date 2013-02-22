@@ -2,11 +2,12 @@ This is how we compile otclient on Mac OS X, we use XQuartz to compile and run o
 
 ## Requirements
 * Mac OS X 10.6 or higher
-* [XCode](https://developer.apple.com/xcode/) (with Command Line Tools for Xcode)
+* [XCode](https://developer.apple.com/xcode/) 
+* Command Line Tools for Xcode (install them inside the XCode menu)
 * [XQuartz](http://xquartz.macosforge.org/landing/)
 * [Homebrew](http://mxcl.github.com/homebrew/)
 
-You should install all those requirements first, I will not cover how to install them in this tutorial, you do that by yourself.
+You should install all those requirements first, in order, I will not cover how to install them in this tutorial.
 
 ## Installing needed libraries
 
@@ -14,10 +15,13 @@ We use brew to install most of required libraries by using the following command
 
 ```
 brew install git
+brew install cmake
 brew install lua
 brew install boost
 brew install glew
 brew install physfs
+brew install libogg
+brew install libvorbis
 ```
 
 ## Cloning and compiling 
@@ -30,3 +34,5 @@ cd build
 cmake ..
 make -j4
 ```
+
+Now you can run, the otclient output binary should be in the same directory.
