@@ -34,7 +34,7 @@ Now that all needed tools is installed, you must configure the system **PATH** v
 
 Check if the user variable **PATH** exists, if not, create one, then set it to:
 ```
-C:\Program Files\CMake 2.8\bin;C:\MinGW\bin;C:\MinGW\lib;C:\MinGW\include
+C:\Program Files (x86)\CMake 2.8\bin;C:\MinGW\bin;C:\MinGW\lib;C:\MinGW\include
 ```
 
 _Make sure that the user variable **PATH** exists and refers to the CMake directory properly._
