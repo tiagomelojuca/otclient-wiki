@@ -63,7 +63,7 @@ Which should output:
    * master
    * tutorial
 
-Now, the job!
+## The Job
 * Step 1, Do some change
 ![code](http://i.imgur.com/d7q4K.png)
 
