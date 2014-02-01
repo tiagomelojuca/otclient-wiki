@@ -105,7 +105,7 @@ Which should output the filename the patch saved to, the file contains your chan
 * It's the developer freedom to choose whether your patch should be commited to the family tree or not, it really depends on how useful your patch is.
 
 ## Bonus
-* It's good to write the signed-off-by line in your patch, to tell that this is your code, etc.  It has _no use_ but it's still useful to write it:
+* It's good to write the signed-off-by line in your patch, to tell that this is your code, etc.  It's not of much use, however, you can use it to reward yourself a bit more.
 ![signedoffby](http://i.imgur.com/Kpfgh.png)
 
 * See if your patch is good:
