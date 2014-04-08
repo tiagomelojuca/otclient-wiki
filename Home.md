@@ -13,7 +13,7 @@ extend game functionalitty with modules known as "addons", feature inspirited by
 users can create their own game interfaces and functionality on top of the original game. The game interface look and style is completely flexible, you can change styles using a syntax near CSS and QML.
 
 ## Getting Started
-Getting started with OTClient is simple! OTClient has multi client/protocol support which means it can run different Tibia protocols/clients (from 8.10 to 9.73/81). In order to run the different versions all you need to do is this:
+Getting started with OTClient is simple! OTClient has multi client/protocol support which means it can run different Tibia protocols/clients (from 7.6 to 10.35). In order to run the different versions all you need to do is this:
 * Copy the Tibia.dat and Tibia.spr from your regular Tibia client into `/data/things/<version>/` folder.
 
 For example: `/data/things/860/` this will check for the 8.60 tibia dat/spr files here.
