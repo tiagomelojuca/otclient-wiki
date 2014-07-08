@@ -1,4 +1,4 @@
-In this this toturial I will explain how you get otclient compiled and running on windows machines.
+In this this tutorial I will explain how you get otclient compiled and running on windows machines.
 
 ### Download what you will need
 
