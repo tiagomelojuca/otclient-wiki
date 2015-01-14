@@ -16,14 +16,23 @@ We use brew to install most of required libraries by using the following command
 ```
 brew install git
 brew install cmake
-brew install lua
+brew install lua (this lua library doesn't work with in this process, we need 5.1.5)
 brew install boost
 brew install glew
 brew install physfs
 brew install libogg
 brew install libvorbis
 ```
+Install LUA 5.1.5
 
+```
+curl "http://www.lua.org/ftp/lua-5.1.5.tar.gz"
+tar -zxvf lua-5.1.5.tar.gz
+cd lua-5.1.5
+make macosx test
+mkdir /opt/lua5.1
+make INSTALL_TOP=/opt/lua5.1 install
+```
 ## Cloning and compiling 
 
 ```
@@ -31,7 +40,7 @@ git clone git://github.com/edubart/otclient.git
 cd otclient
 mkdir build
 cd build
-cmake ..
+cmake -DUSE_STATIC_LIBS=OFF -DLUA_LIBRARY=/opt/lua5.1/lib/liblua.a -DLUA_INCLUDE_DIR=/opt/lua5.1/include/ ..
 make -j4
 ```
 
