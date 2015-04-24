@@ -33,7 +33,9 @@ Put the "libSDL2.so" file inside the android/project/libs/armeabi-v7a
 
 ### 8 - Clone the Mobile OTClient sources
 `git clone -b mobile_port https://github.com/edubart/otclient.git otclient-mobile`
+
 or simply
+
 `git checkout mobile_port` from within the otclient git repository.
 
 # Compiling
@@ -41,9 +43,9 @@ or simply
 Must connect a phone that with a armeabi-v7a processor.
 
 ## 10 - Run Compilation Script
-**Windows:**
-Create a script following the "compile_android.sh" logic (we can add one soon).
-**Linux**
-Run compile_android.sh script.
+**Windows:**<br/>
+Create a script following the "compile_android.sh" logic (we can add one soon).<br/>
+**Linux**<br/>
+Run compile_android.sh script.<br/>
 
 Lastly contribute to the project! ;)
