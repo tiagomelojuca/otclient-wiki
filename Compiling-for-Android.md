@@ -38,7 +38,6 @@ or simply
 
 `git checkout mobile_port` from within the otclient git repository.
 
-# Compiling
 ### 9 - Connect a Phone
 Must connect a phone that with a armeabi-v7a processor.
 
