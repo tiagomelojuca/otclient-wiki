@@ -1,4 +1,4 @@
-# Preliminary
+# Setup Instructions
 ### 1 - Setup the Libraries/SDK/JDK
 Download the following files:
 * Android SDK http://developer.android.com/sdk/installing/index.html?pkg=tools
@@ -13,7 +13,8 @@ Extract and install the files downloaded.
 ### 3 - Copy the Android Libraries
 Put the android libraries inside the android ndk folder.
 
-### 4 - Put the "libSDL2.so" inside the android/project/libs/armeabi-v7a
+### 4 - Copying the libSDL2.so file
+Put the "libSDL2.so" file inside the android/project/libs/armeabi-v7a
 
 ### 5 - Create Environment Variables:
 - ANDROID_SDK pointing to the android sdk folder
