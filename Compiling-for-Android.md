@@ -10,7 +10,7 @@ Download the following files:
 * [CMake](http://www.cmake.org/download/)
 
 ### 2 - Extract and Install
-Extract and install the files downloaded.
+Extract and install the files downloaded. <br />
 For **Cygwin**, you will need select **make** program to install.
 
 ### 3 - Copy the Android Libraries
