@@ -16,17 +16,14 @@ For **Cygwin**, you will need select **make** program to install.
 ### 3 - Copy the Android Libraries
 Put the android libraries inside the android ndk folder.
 
-### 4 - Copying the libSDL2.so file
-Put the "libSDL2.so" file inside the android/project/libs/armeabi-v7a
-
-### 5 - Create Environment Variables:
+### 4 - Create Environment Variables:
 - ANDROID_SDK pointing to the android sdk folder
 - ANDROID_NDK pointing to the android ndk folder
 - JAVA_HOME pointing to the java folder
 - ANT_HOME pointing to the apache ant folder
 - CYGWIN_HOME pointing to the cygwin folder
 
-### 6 - Add folders to your system path variable:
+### 5 - Add folders to your system path variable:
 - ANDROID_NDK
 - ANDROID_SDK/platform-tools (to use adb)
 - ANDROID_SDK/tools (to use android)
@@ -34,17 +31,17 @@ Put the "libSDL2.so" file inside the android/project/libs/armeabi-v7a
 - ANT_HOME/bin
 - CYGWIN_HOME/bin
 
-### 7 - Clone the Mobile OTClient sources
+### 6 - Clone the Mobile OTClient sources
 `git clone -b mobile_port https://github.com/edubart/otclient.git otclient-mobile`
 
 or simply
 
 `git checkout mobile_port` from within the otclient git repository.
 
-### 8 - Connect a Phone
+### 7 - Connect a Phone
 Must connect a phone that with a armeabi-v7a processor.
 
-## 9 - Run Compilation Script
+## 8 - Run Compilation Script
 **Windows:** Run compile_android_windows.bat script.<br/>
 **Linux:** Run compile_android_unix.sh script.<br/>
 
