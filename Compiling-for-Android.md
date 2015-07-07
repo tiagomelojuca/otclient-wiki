@@ -45,7 +45,7 @@ or simply
 Must connect a phone that with a armeabi-v7a processor.
 
 ## 9 - Run Compilation Script
-**Windows:** Create a script following the "compile_android.sh" logic.<br/>
-**Linux:** Run compile_android.sh script.<br/>
+**Windows:** Run compile_android_windows.bat script.<br/>
+**Linux:** Run compile_android_unix.sh script.<br/>
 
 Lastly contribute to the project! ;)
