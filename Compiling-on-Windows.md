@@ -40,7 +40,7 @@ C:\Program Files (x86)\CMake 2.8\bin;C:\MinGW\bin;C:\MinGW\lib;C:\MinGW\include
 _Make sure that the user variable **PATH** exists and refers to the CMake directory properly._
 
 ### Download OTClient source code
-Go to our [download page](/download.html) and download the desired OTClient source code. The directory where you place these files may not be spaced. For instance, "C:\OTClient\" is **good**, but "C:\Program Files\OTClient" isn't.
+Download the latest [OTClient sources](https://github.com/edubart/otclient/archive/master.zip). The directory in which you place the source files may not contain any spaces (e.g. "C:\OTClient\" is **good**, however "C:\Program Files\OTClient" is not).
 
 ### Generate CodeBlocks Project file
 Run the **CMake-gui.exe** located in **\Program Files\CMake 2.8\bin**, and specify the directory in which you just placed the OTClient source code, and where you want the project files to be built. Press configure,  select **CodeBlocks - MinGW Makefiles** as the generator, then generate the project files.
