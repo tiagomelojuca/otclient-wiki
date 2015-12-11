@@ -26,9 +26,9 @@ Before implementing anything, you must REALLY follow the next 8 code rules. They
     int windowHorizontalSize; // Correct
 ```
 
-* Single character variable names are only okay for counters, where the purpose of the variable is obvious.
-* Classes always start with a big letter.
-* Class members variables always begins with m_ fallowed by a lower case.
+* Single character variable names are only suitable for counter variables, where the purpose of the variable is obvious.
+* Classes always start with a uppercase character.
+* Class members variables always begin with m_ followed by a name starting with a lower case character.
 
 ```cpp
     class DummyClass
