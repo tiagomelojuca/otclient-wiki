@@ -1,5 +1,82 @@
 In this this tutorial I will explain how you get otclient compiled and running on windows machines.
 
+# Miscrosoft Visual Studio 2012+
+
+### Download MSVC 2012 (or newer)
+Download the latest [Miscrosoft Visual Studio](https://www.visualstudio.com/) and install it.
+
+### Download OTClient source code
+Download the latest [OTClient sources](https://github.com/edubart/otclient/archive/master.zip). The directory in which you place the source files may not contain any spaces (e.g. "C:\OTClient\" is **good**, however "C:\Program Files\OTClient" is not).
+
+### Download OTClient Extra Libraries
+[OTClient libraries](https://mega.nz/#!1Zg0jK6Q!gA5jHmL4qU92XnDdy98UfS2y1KFQQvbjS_L5p5UHDYk)
+
+_For now, those libraries are the same as the ones required when compiling with MinGW, although not all of it will be used or required._
+
+### Open OTClient source code on MVSCV
+Go to OTClient sources \vc12 and open the file otclient.vcxproj on your current version of Miscrosoft Visual Studio.
+
+_It is possible that a conversion between versions will be required. Let Visual Studio handle this by pressing OK._
+
+### Configuring Libraries and Includes
+Right click the project and go to Properties. On 'Configuration Properties' > C/C++, find the 'Additional Includes Directory' and select the \includes folder from the 'OTClient Extra Libraries'.
+
+Go now to 'Configuration Properties' > Linker, find the 'Additional Libraries Directory' and select the \lib folder from the 'OTClient Extra Libraries'. Press Apply and then OK.
+
+_Differently, you can just copy all folders (\lib, \includes, \bin) from 'OTClient Extra Libraries' to your Visual Studio compiler folder (usually something like: '\Program Files (x86)\Microsoft Visual Studio VERSION\VC'). No substituion should be required._
+
+### Scripting and compiling it
+Open the code of the project and script away! To compile go to Build > Build Solution.
+
+**Make sure to copy Tibia.dat and Tibia.spr inside /data/things/<version>/ folder before running the client**
+
+### Known Problems
+
+#### unistd.h
+It is possible that you'll have problems with <unistd.h>, which is a library from MinGW. The easy turnaround for that is to create you'r own unistd.h. For that you'll need to download [getopt.cpp](https://gist.github.com/ashelly/7776712) and create an unistd.h file with the following [code](http://stackoverflow.com/questions/341817/is-there-a-replacement-for-unistd-h-for-windows-visual-c).
+
+Change:
+```
+    typedef __int8            int8_t;
+    typedef __int16           int16_t;
+    typedef __int32           int32_t;
+    typedef __int64           int64_t;
+    typedef unsigned __int8   uint8_t;
+    typedef unsigned __int16  uint16_t;
+    typedef unsigned __int32  uint32_t;
+    typedef unsigned __int64  uint64_t;
+```
+
+To:
+```
+    typedef signed __int8            int8_t;
+    typedef signed __int16           int16_t;
+    typedef signed __int32           int32_t;
+    typedef signed __int64           int64_t;
+    typedef unsigned __int8   uint8_t;
+    typedef unsigned __int16  uint16_t;
+    typedef unsigned __int32  uint32_t;
+    typedef unsigned __int64  uint64_t;
+```
+
+Finally, add the folder with getopt.cpp and your new unistd.h to Visual Studio in the same way you did with the 'OTClient Extra Libraries'.
+
+#### OpenAL error, from '\src\framework\sound\declarations.h'
+It is possible that the only problem is the missing AL/, so change:
+
+```
+    #include <al.h>
+    #include <alc.h>
+```
+
+To:
+
+```
+    #include <AL/al.h>
+    #include <AL/alc.h>
+```
+
+# Codeblocks
 ### Download what you will need
 
 There are several tools you need to compile the project, each of which is listed next to their link here:
