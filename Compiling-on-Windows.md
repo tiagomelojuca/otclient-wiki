@@ -7,7 +7,7 @@ There are several tools you need to compile the project, each of which is listed
 * [CMake](http://www.cmake.org/cmake/resources/software.html) **2.8.8 or greater**
 * [CodeBlocks](http://www.codeblocks.org/downloads/26) **without MinGW, we use a newer version**
 * [MinGW32](http://sourceforge.net/projects/mingw/files/Installer/mingw-get-inst/) 20120426 or greater
-* [otclient libraries for mingw32](https://mega.nz/#!2w0kTZBA!irw5_d-FSbSQaWaG-iR6ttTs1wBOmjv8ijoSjxVNPLw)
+* [otclient libraries for mingw32](https://mega.nz/#!1Zg0jK6Q!gA5jHmL4qU92XnDdy98UfS2y1KFQQvbjS_L5p5UHDYk)
 * otclient source code
 
 _Make sure you install their latest versions, otherwise, things might not work._
