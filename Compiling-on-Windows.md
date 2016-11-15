@@ -1,32 +1,60 @@
 In this this tutorial I will explain how you get otclient compiled and running on windows machines.
 
-# Miscrosoft Visual Studio 2012+
+# Miscrosoft Visual Studio 2013
 
-### Download MSVC 2012 (or newer)
+### Download MSVC 2013
 Download the latest [Miscrosoft Visual Studio](https://www.visualstudio.com/) and install it.
+Or download it from
+[Mediafire](http://www.mediafire.com/file/az4y6skk76ucebq/en_visual_studio_community_2013_with_update_5_x86_6816332.exe)
+
 
 ### Download OTClient source code
 Download the latest [OTClient sources](https://github.com/edubart/otclient/archive/master.zip). The directory in which you place the source files may not contain any spaces (e.g. "C:\OTClient\" is **good**, however "C:\Program Files\OTClient" is not).
 
 ### Download OTClient Extra Libraries
-[OTClient libraries](https://mega.nz/#!1Zg0jK6Q!gA5jHmL4qU92XnDdy98UfS2y1KFQQvbjS_L5p5UHDYk)
+[OTClient libraries](https://mega.nz/#!1Zg0jK6Q!gA5jHmL4qU92XnDdy98UfS2y1KFQQvbjS_L5p5UHDYk).
+Or from [Mediafire](http://www.mediafire.com/file/vip38k1uy7eagk0/otclient-msvc13-libs.zip)
+Extract the otclient libraries in the **C** directory
+
+Download [Boost Version 1.55.0](http://www.boost.org/users/history/version_1_55_0.html)
+or you can download it from [Mediafire](http://www.mediafire.com/file/pn3ibrnphddw28x/boost_1_55_0.zip)
+then extract and place it in the **otclient-msvc13-libs** directory.
 
 _For now, those libraries are the same as the ones required when compiling with MinGW, although not all of it will be used or required._
 
 ### Open OTClient source code on MVSCV
-Go to OTClient sources \vc12 and open the file otclient.vcxproj on your current version of Miscrosoft Visual Studio.
+Go to OTClient sources \vc12 and right click the **sln** file and select open with **Mircosoft Visual Studio 2013**.
 
-_It is possible that a conversion between versions will be required. Let Visual Studio handle this by pressing OK._
+At the top of the screen to the right of where it says **Local Windows Debugger**, make sure **Release** is selected as your _solution configuration_ & to the right of that make sure **Win32** is selected as your _solution platform_.
 
 ### Configuring Libraries and Includes
-Right click the project and go to Properties. On 'Configuration Properties' > C/C++, find the 'Additional Includes Directory' and select the \includes folder from the 'OTClient Extra Libraries'.
+Right click the project select **properties** then go to **VC++ Directories** then select the **Include Directories**, select all the text in the box and replace with this.
+```
+C:\otclient-msvc13-libs\libogg-1.3.1\include;C:\otclient-msvc13-libs\libvorbis-1.3.3\include;C:\otclient-msvc13-libs\physfs-2.0.3\include;C:\otclient-msvc13-libs\OpenSSL-1.0.1e\include;C:\otclient-msvc13-libs\zlib-1.2.5\include;C:\otclient-msvc13-libs\OpenAL\include\AL;C:\otclient-msvc13-libs\glew-1.10.0\include;C:\otclient-msvc13-libs\LuaJIT-2.0.2\include;C:\otclient-msvc13-libs\boost_1_55_0\include;..\src;$(IncludePath)
+```
 
-Go now to 'Configuration Properties' > Linker, find the 'Additional Libraries Directory' and select the \lib folder from the 'OTClient Extra Libraries'. Press Apply and then OK.
+Then select the **Library Directories** and select all the text in the box and replace that with this.
+```
+C:\otclient-msvc13-libs\libogg-1.3.1\lib;C:\otclient-msvc13-libs\libvorbis-1.3.3\lib;C:\otclient-msvc13-libs\physfs-2.0.3\lib;C:\otclient-msvc13-libs\OpenSSL-1.0.1e\lib\VC;C:\otclient-msvc13-libs\zlib-1.2.5\lib;C:\otclient-msvc13-libs\OpenAL\lib;C:\otclient-msvc13-libs\LuaJIT-2.0.2\lib;C:\otclient-msvc13-libs\glew-1.10.0\lib;C:\otclient-msvc13-libs\boost_1_55_0\lib;$(LibraryPath)
+```
+Let it load the additional libraries, when it says **Ready** in the left hand bottom corner of the screen. The project is ready to be compiled.
 
-_Differently, you can just copy all folders (\lib, \includes, \bin) from 'OTClient Extra Libraries' to your Visual Studio compiler folder (usually something like: '\Program Files (x86)\Microsoft Visual Studio VERSION\VC'). No substituion should be required._
+### Compiling
+To compile go to **Build** in the main menu > **Build Solution**.
 
-### Scripting and compiling it
-Open the code of the project and script away! To compile go to Build > Build Solution.
+In the end you may see link warnings such as.
+```
+1>libvorbisfile_static.lib(vorbisfile.obj) : warning LNK4204: 'C:\OTClient\vc12\Release\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+```
+Its really nothing to be concerned with, as long as you see this message, you are good to go.
+
+`========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========`
+
+Once it has compiled, take the **otclient.exe** from the **vc12\Release** directory and place it in the root directory (root is the directory with **init.lua**) and unzip these dll's in the root directory as well.
+http://www.mediafire.com/file/uzs12tdk4bln29s/otclient_dlls.zip
+
+### Scripting
+Open the code of the project and script away! 
 
 **Make sure to copy Tibia.dat and Tibia.spr inside /data/things/<version>/ folder before running the client**
 
