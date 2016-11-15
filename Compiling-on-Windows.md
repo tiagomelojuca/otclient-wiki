@@ -51,7 +51,7 @@ Its really nothing to be concerned with, as long as you see this message, you ar
 `========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========`
 
 Once it has compiled, take the **otclient.exe** from the **vc12\Release** directory and place it in the root directory (root is the directory with **init.lua**) and unzip these dll's in the root directory as well.
-http://www.mediafire.com/file/uzs12tdk4bln29s/otclient_dlls.zip
+[OtClient DLL's](http://www.mediafire.com/file/uzs12tdk4bln29s/otclient_dlls.zip)
 
 ### Scripting
 Open the code of the project and script away! 
