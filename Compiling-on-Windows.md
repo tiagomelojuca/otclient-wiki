@@ -22,7 +22,7 @@ then extract and place it in the **otclient-msvc13-libs** directory.
 
 _For now, those libraries are the same as the ones required when compiling with MinGW, although not all of it will be used or required._
 
-### Open OTClient source code on MVSCV
+### Open OTClient source code on MVSC 2013
 Go to OTClient sources \vc12 and right click the **sln** file and select open with **Mircosoft Visual Studio 2013**.
 
 At the top of the screen to the right of where it says **Local Windows Debugger**, make sure **Release** is selected as your _solution configuration_ & to the right of that make sure **Win32** is selected as your _solution platform_.
@@ -56,7 +56,7 @@ Once it has compiled, take the **otclient.exe** from the **vc12\Release** direct
 ### Scripting
 Open the code of the project and script away! 
 
-**Make sure to copy Tibia.dat and Tibia.spr inside /data/things/<version>/ folder before running the client**
+**Make sure to copy Tibia.dat and Tibia.spr inside /data/things/\<version\>/ folder before running the client**
 
 ### Known Problems
 
