@@ -14,14 +14,19 @@ Download the latest [OTClient sources](https://github.com/edubart/otclient/archi
 Or from [Mediafire](http://www.mediafire.com/file/vip38k1uy7eagk0/otclient-msvc13-libs.zip)
 Extract the otclient libraries in the **C** directory
 
+**Example:**  
+`C:\otclient-msvc13-libs`
+
 Download [Boost Version 1.55.0](http://www.boost.org/users/history/version_1_55_0.html)
 or you can download it from [Mediafire](http://www.mediafire.com/file/pn3ibrnphddw28x/boost_1_55_0.zip)
-then extract and place it in the **otclient-msvc13-libs** directory.
+then extract and place it in the **otclient-msvc13-libs** directory.  
+**Example:**  
+`C:\otclient-msvc13-libs\boost_1_55_0`
 
 _For now, those libraries are the same as the ones required when compiling with MinGW, although not all of it will be used or required._
 
 ### Open OTClient source code on MVSC 2013
-Go to OTClient sources \vc12 and right click the **sln** file and select open with **Mircosoft Visual Studio 2013**.
+Go to OTClient sources **\vc12** and right click the **sln** file and select open with **Mircosoft Visual Studio 2013**.
 
 At the top of the screen to the right of where it says **Local Windows Debugger**, make sure **Release** is selected as your _solution configuration_ & to the right of that make sure **Win32** is selected as your _solution platform_.
 
