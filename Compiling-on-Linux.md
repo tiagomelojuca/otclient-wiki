@@ -4,7 +4,7 @@ First install required development packages using apt-get
 
 ```sh
 sudo apt-get install build-essential cmake git-core
-sudo apt-get install libboost1.55-all-dev libphysfs-dev libssl-dev liblua5.1-dev
+sudo apt-get install libboost1.58-all-dev libphysfs-dev libssl-dev liblua5.1-0-dev
 sudo apt-get install libglew1.6-dev libvorbis-dev libopenal-dev libz-dev
 ```
 
