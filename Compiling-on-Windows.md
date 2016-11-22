@@ -3,9 +3,7 @@ In this this tutorial I will explain how you get otclient compiled and running o
 # Miscrosoft Visual Studio 2013
 
 ### Download MSVC 2013
-Download the latest [Miscrosoft Visual Studio](https://www.visualstudio.com/) and install it.
-Or download it from
-[Mediafire](http://www.mediafire.com/file/az4y6skk76ucebq/en_visual_studio_community_2013_with_update_5_x86_6816332.exe)
+Download the 2013 installer from [Miscrosoft Visual Studio](https://www.visualstudio.com/) website or download the 2013 installer from [Mediafire](http://www.mediafire.com/file/az4y6skk76ucebq/en_visual_studio_community_2013_with_update_5_x86_6816332.exe)
 
 
 ### Download OTClient source code
