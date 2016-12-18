@@ -16,7 +16,7 @@ We use brew to install most of required libraries by using the following command
 ```
 brew install git
 brew install cmake
-brew install lua (this lua library doesn't work with in this process, we need 5.1.5)
+brew install lua51 #(this lua library doesn't work with in this process, we need 5.1.5)
 brew install boost
 brew install glew
 brew install physfs
