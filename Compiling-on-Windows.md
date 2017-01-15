@@ -1,111 +1,34 @@
 In this this tutorial I will explain how you get otclient compiled and running on windows machines.
 
-# Miscrosoft Visual Studio 2013
+# Miscrosoft Visual Studio 2015
 
-### Download MSVC 2013
-Download the 2013 installer from [Miscrosoft Visual Studio](https://www.visualstudio.com/) website or download the 2013 installer from [Mediafire](http://www.mediafire.com/file/az4y6skk76ucebq/en_visual_studio_community_2013_with_update_5_x86_6816332.exe)
+1. Download the required software
 
+To compile The Forgotten Server on Windows, you will need:
 
-### Download OTClient source code
-Download the latest [OTClient sources](https://github.com/edubart/otclient/archive/master.zip). The directory in which you place the source files may not contain any spaces (e.g. "C:\OTClient\" is **good**, however "C:\Program Files\OTClient" is not).
+Visual Studio 2015 Update 3 (compiler)
+TFS SDK v3.2 (libraries)
+sha1sum: 3fb1b140e40e8e8bc90f82f92bd022a50569b185
+sha256sum: 2ffb549f336ad11550da9b9c40716880e13b1cc0ee86e7599022dcacc972a3bf
+Boost C++ libraries (32-bit download, 64-bit download)
+2. Install the required software
 
-### Download OTClient Extra Libraries
-[OTClient libraries](https://mega.nz/#!1Zg0jK6Q!gA5jHmL4qU92XnDdy98UfS2y1KFQQvbjS_L5p5UHDYk).
-Or from [Mediafire](http://www.mediafire.com/file/vip38k1uy7eagk0/otclient-msvc13-libs.zip)
-Extract the otclient libraries in the **C** directory
+Once you have downloaded the software listed in the step above, begin by installing Visual Studio and Boost C++ libraries. Extract TFS SDK anywhere on your computer and run the file "register_tfssdk_env.bat" to set the PATH environment variable for TFS SDK, so that the compiler can find the libraries once we get to compiling the source code. Move the file "register_boost_env.bat" from TFS SDK to the directory where you installed Boost C++ libraries and run it there (it should be in the directory called boost_1_62_0).
 
-**Example:**  
-`C:\otclient-msvc13-libs`
+3. Download the source code
 
-Download [Boost Version 1.55.0](http://www.boost.org/users/history/version_1_55_0.html)
-or you can download it from [Mediafire](http://www.mediafire.com/file/pn3ibrnphddw28x/boost_1_55_0.zip)
-then extract and place it in the **otclient-msvc13-libs** directory.  
-**Example:**  
-`C:\otclient-msvc13-libs\boost_1_55_0`
+If you have a Git client installed, you can clone the latest copy with this command:
 
-_For now, those libraries are the same as the ones required when compiling with MinGW, although not all of it will be used or required._
+git clone https://github.com/otland/forgottenserver.git
+If you don't have a Git client installed, you can download the latest copy of The Forgotten Server from this URL: https://github.com/otland/forgottenserver/archive/master.zip
 
-### Open OTClient source code on MVSC 2013
-Go to OTClient sources **\vc12** and right click the **sln** file and select open with **Mircosoft Visual Studio 2013**.
+4. Build
 
-At the top of the screen to the right of where it says **Local Windows Debugger**, make sure **Release** is selected as your _solution configuration_ & to the right of that make sure **Win32** is selected as your _solution platform_.
+Find the directory vc14 in the copy of The Forgotten Server that you downloaded, and open theforgottenserver.sln. This should launch Visual Studio, and you should be good to go.
 
-### Configuring Libraries and Includes
-Right click the project select **properties** then go to **VC++ Directories** then select the **Include Directories**, select all the text in the box and replace with this.
-```
-C:\otclient-msvc13-libs\libogg-1.3.1\include;C:\otclient-msvc13-libs\libvorbis-1.3.3\include;C:\otclient-msvc13-libs\physfs-2.0.3\include;C:\otclient-msvc13-libs\OpenSSL-1.0.1e\include;C:\otclient-msvc13-libs\zlib-1.2.5\include;C:\otclient-msvc13-libs\OpenAL\include\AL;C:\otclient-msvc13-libs\glew-1.10.0\include;C:\otclient-msvc13-libs\LuaJIT-2.0.2\include;C:\otclient-msvc13-libs\boost_1_55_0\include;..\src;$(IncludePath)
-```
+To configure the build, navigate to Build -> Configuration Manager in the menu. A dialog should pop up where you can choose between Release or Debug build, and 32-bit (Win32) or 64-bit (x64) build.
 
-Then select the **Library Directories** and select all the text in the box and replace that with this.
-```
-C:\otclient-msvc13-libs\libogg-1.3.1\lib;C:\otclient-msvc13-libs\libvorbis-1.3.3\lib;C:\otclient-msvc13-libs\physfs-2.0.3\lib;C:\otclient-msvc13-libs\OpenSSL-1.0.1e\lib\VC;C:\otclient-msvc13-libs\zlib-1.2.5\lib;C:\otclient-msvc13-libs\OpenAL\lib;C:\otclient-msvc13-libs\LuaJIT-2.0.2\lib;C:\otclient-msvc13-libs\glew-1.10.0\lib;C:\otclient-msvc13-libs\boost_1_55_0\lib;$(LibraryPath)
-```
-Let it load the additional libraries, when it says **Ready** in the left hand bottom corner of the screen. The project is ready to be compiled.
-
-### Compiling
-To compile go to **Build** in the main menu > **Build Solution**.
-
-In the end you may see link warnings such as.
-```
-1>libvorbisfile_static.lib(vorbisfile.obj) : warning LNK4204: 'C:\OTClient\vc12\Release\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
-```
-Its really nothing to be concerned with, as long as you see this message, you are good to go.
-
-`========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========`
-
-Once it has compiled, take the **otclient.exe** from the **vc12\Release** directory and place it in the root directory (root is the directory with **init.lua**) and unzip these dll's in the root directory as well.
-[OtClient DLL's](http://www.mediafire.com/file/uzs12tdk4bln29s/otclient_dlls.zip)
-
-### Scripting
-Open the code of the project and script away! 
-
-**Make sure to copy Tibia.dat and Tibia.spr inside /data/things/\<version\>/ folder before running the client**
-
-### Known Problems
-
-#### unistd.h
-It is possible that you'll have problems with <unistd.h>, which is a library from MinGW. The easy turnaround for that is to create you'r own unistd.h. For that you'll need to download [getopt.cpp](https://gist.github.com/ashelly/7776712) and create an unistd.h file with the following [code](http://stackoverflow.com/questions/341817/is-there-a-replacement-for-unistd-h-for-windows-visual-c).
-
-Change:
-```
-    typedef __int8            int8_t;
-    typedef __int16           int16_t;
-    typedef __int32           int32_t;
-    typedef __int64           int64_t;
-    typedef unsigned __int8   uint8_t;
-    typedef unsigned __int16  uint16_t;
-    typedef unsigned __int32  uint32_t;
-    typedef unsigned __int64  uint64_t;
-```
-
-To:
-```
-    typedef signed __int8            int8_t;
-    typedef signed __int16           int16_t;
-    typedef signed __int32           int32_t;
-    typedef signed __int64           int64_t;
-    typedef unsigned __int8   uint8_t;
-    typedef unsigned __int16  uint16_t;
-    typedef unsigned __int32  uint32_t;
-    typedef unsigned __int64  uint64_t;
-```
-
-Finally, add the folder with getopt.cpp and your new unistd.h to Visual Studio in the same way you did with the 'OTClient Extra Libraries'.
-
-#### OpenAL error, from '\src\framework\sound\declarations.h'
-It is possible that the only problem is the missing AL/, so change:
-
-```
-    #include <al.h>
-    #include <alc.h>
-```
-
-To:
-
-```
-    #include <AL/al.h>
-    #include <AL/alc.h>
-```
+To start compiling, open the Build menu again and click on Build Solution.
 
 # Codeblocks
 ### Download what you will need
