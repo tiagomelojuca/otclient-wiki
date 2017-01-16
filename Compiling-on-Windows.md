@@ -21,7 +21,7 @@ Once you have downloaded the software listed in the step above, begin by install
 If you have a Git client installed, you can clone the latest copy with this command: `git clone https://github.com/edubart/otclient.git`
 
 
-If you don't have a Git client installed, you can download the latest copy of The OTClient from this URL: https:https://github.com/edubart/otclient/archive/master.zip
+If you don't have a Git client installed, you can download the latest copy of The OTClient from this URL: https://github.com/edubart/otclient/archive/master.zip
 
 **4. Build**
 
