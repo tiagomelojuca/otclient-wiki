@@ -4,11 +4,11 @@ In this this tutorial I will explain how you get otclient compiled and running o
 
 **1. Download the required software**
 
-To compile The Forgotten Server on Windows, you will need:
+To compile OTClient on Windows, you will need:
 
-* [Visual Studio 2015 Update 3](https://www.visualstudio.com/)(compiler)
+* [Visual Studio 2015 Update 3](https://www.visualstudio.com/) (compiler)
 
-* [Otclient SDK v1.0](https://github.com/conde2/otclient-sdk)(libraries)
+* [Otclient SDK v1.0](https://github.com/conde2/otclient-sdk) (libraries)
 
 
 **2. Install the required software**
