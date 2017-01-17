@@ -1,6 +1,6 @@
-In this this tutorial I will explain how you get otclient compiled and running on windows machines.
+In this this tutorial I will explain how you get OTClient compiled and running on Windows machines.
 
-# Miscrosoft Visual Studio 2015
+# Microsoft Visual Studio 2015
 
 **1. Download the required software**
 
