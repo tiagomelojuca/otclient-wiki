@@ -13,7 +13,7 @@ To compile OTClient on Windows, you will need:
 
 **2. Install the required software**
 
-Once you have downloaded the software listed in the step above, begin by installing Visual Studio and Boost C++ libraries. Extract OTClient SDK anywhere on your computer. (Ex: `C:\otclient-sdk`), run the file "register_otclient_sdk_env.bat" to set the PATH environment variable for OTClient SDK, so that the compiler can find the libraries once we get to compiling the source code. Move the file "register_otclient_boost_env.bat" from OTClient SDK to the directory where you installed Boost C++ libraries and run it there (it should be in the directory called boost_1_63_0).
+Once you have downloaded the software listed in the step above, begin by installing Visual Studio. Extract OTClient SDK anywhere on your computer. (Ex: `C:\otclient-sdk`), run the file "register_otclient_sdk_env.bat" before running Visual Studio, to set the PATH environment variable for OTClient SDK, so that the compiler can find the libraries once we get to compiling the source code. Move the file "register_otclient_boost_env.bat" from OTClient SDK to the directory where you installed Boost C++ libraries and run it there (it should be in the directory called boost_1_63_0).
 
 
 **3. Download the source code**
