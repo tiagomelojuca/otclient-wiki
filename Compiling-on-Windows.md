@@ -39,7 +39,7 @@ There are several tools you need to compile the project, each of which is listed
 * [CMake](http://www.cmake.org/cmake/resources/software.html) **2.8.8 or greater**
 * [CodeBlocks](http://www.codeblocks.org/downloads/26) **without MinGW, we use a newer version**
 * [MinGW32](http://sourceforge.net/projects/mingw/files/Installer/mingw-get-inst/) 20120426 or greater
-* [otclient libraries for mingw32](https://mega.nz/#!1Zg0jK6Q!gA5jHmL4qU92XnDdy98UfS2y1KFQQvbjS_L5p5UHDYk)
+* [otclient libraries for mingw32](http://www.mediafire.com/file/gf1cr1rj0znxdan/otclient-libs-mingw32.rar)
 * otclient source code
 
 _Make sure you install their latest versions, otherwise, things might not work._
@@ -88,3 +88,6 @@ Any other problem should be posted in [otclient's otland forum](http://otland.ne
 
 ### Dx9 Support Layer
 If you would like to enable the dx9 support layer for otclient you need to compile with *-DOPENGLES=2.0*. Now otclient.exe will ask for libEGL.dll and libGLESv2.dll which you can get [here](https://dl.dropbox.com/u/49948294/otclient/dx9_dlls.zip), place these dlls with the otclient.exe folder.
+***
+
+***
