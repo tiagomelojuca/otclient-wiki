@@ -13,23 +13,29 @@ extend game functionalitty with modules known as "addons", feature inspirited by
 users can create their own game interfaces and functionality on top of the original game. The game interface look and style is completely flexible, you can change styles using a syntax near CSS and QML.
 
 ## Getting Started
-Getting started with OTClient is simple! OTClient has multi client/protocol support which means it can run different Tibia protocols/clients (from 7.6 to 10.35). In order to run the different versions all you need to do is this:
+Getting started with OTClient is simple! OTClient has multi client/protocol support which means it can run different Tibia protocols/clients (from 7.4 to 10.99). In order to run the different versions all you need to do is this:
 * Copy the Tibia.dat and Tibia.spr from your regular Tibia client into `/data/things/<version>/` folder.
 
-For example: `/data/things/860/` this will check for the 8.60 tibia dat/spr files here.
+For example: `/data/things/871/` this will check for the 8.71 tibia dat/spr files here.
 
 Now you can use that client version by selecting it in the login process:
 
-![Version](https://dl.dropbox.com/u/49948294/wiki/getting_started/login.png)
+![Version](http://i.imgur.com/P1pVBG8.png)
 
 To login to the server you would like to play you can just enter in the **server** and the **port** (like so in the article above)
 
 ### Menu
 There are menu buttons for the client management and game features located at the top of the client window.
 
-![Client Options](https://dl.dropbox.com/u/49948294/wiki/getting_started/client_options.png)
+![Module Manager](http://i.imgur.com/KUlnZ0B.png)
 
-![Game Options](https://dl.dropbox.com/u/49948294/wiki/getting_started/game_options.png)
+![Game Options](http://i.imgur.com/bqGNsSm.png)
+
+![Console Options](http://i.imgur.com/uye4dZn.png)
+
+![Graphics Options](http://i.imgur.com/ZvNkX64.png)
+
+![Audio Options](http://i.imgur.com/QVhGmTE.png)
 
 For any of the traditional game features, this is where they will be located.
 
