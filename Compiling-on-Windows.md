@@ -1,3 +1,5 @@
+**WARNING: This page  is outdated**, at the moment I would recommend compiling with mingw-w64 (instead of mingw32, they are different!) and compile all required libraries yourself or find them pre compiled on the web.
+
 In this this tutorial I will explain how you get OTClient compiled and running on Windows machines.
 
 # Microsoft Visual Studio 2015
