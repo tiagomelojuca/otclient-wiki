@@ -4,7 +4,7 @@ First install required development packages using apt-get
 
 ```sh
 sudo apt-get install -y build-essential cmake git-core
-sudo apt-get install -y libboost1.58-all-dev libphysfs-dev libssl-dev liblua5.1-0-dev
+sudo apt-get install -y libboost-all-dev libphysfs-dev libssl-dev liblua5.1-0-dev
 sudo apt-get install -y libglew-dev libvorbis-dev libopenal-dev zlib1g-dev
 ```
 
@@ -16,12 +16,6 @@ cd otclient && mkdir build && cd build && cmake .. && make
 ./otclient
 ```
 
-### Arch Linux
-
-The project creator @edubart uses Arch Linux at home and maintains an [AUR package for otclient](http://aur.archlinux.org/packages.php?ID=49101), make sure that you have yaourt and just run:
-
-```sh
-yaourt -S otclient-git
 ```
 ### Fedora
 
