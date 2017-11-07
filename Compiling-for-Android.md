@@ -2,7 +2,7 @@
 ### 1 - Setup the Libraries/SDK/JDK/Programs
 Download the following files:
 * [Android SDK](http://developer.android.com/sdk/installing/index.html?pkg=tools)
-* [Android NDK R10d](https://developer.android.com/tools/sdk/ndk/index.html)
+* [Android NDK R10d](https://dl.google.com/android/ndk/android-ndk-r10d-windows-x86_64.exe)
 * [Android Libraries](http://goo.gl/NER92t) for armeabi-v7a
 * [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 * [Apache ANT](http://ant.apache.org/bindownload.cgi)
