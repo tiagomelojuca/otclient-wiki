@@ -1,4 +1,4 @@
-### Ubuntu
+## Ubuntu
 
 First install required development packages using apt-get
 
@@ -16,9 +16,30 @@ cd otclient && mkdir build && cd build && cmake .. && make
 ./otclient
 ```
 
-```
-### Fedora
+#### Common Ubuntu problems:
 
+If you have this error at make:
+```
+Linking CXX executable otclient /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/libphysfs.a: error adding symbols: Archive has no index; run ranlib to add one collect2: 
+```
+
+Then do:
+```
+sudo apt-get install libncurses5-dev
+sudo apt-get install mercurial
+hg clone -r stable-2.0 http://hg.icculus.org/icculus/physfs/
+cd physfs
+sudo mkdir build
+cd build
+sudo cmake ..
+sudo make
+sudo make install
+sudo mv /usr/local/lib/libphysfs.a /usr/lib/x86_64-linux-gnu/.
+```
+
+
+## Fedora
+```
 These instructions were tested on Fedora 20. Some packages that I suggest to be installed might not actually be needed and there might be a simpler way to link in Lua, but I am not aware of it. In case of a problem, contact d33tah.
 
 #### Install Lua 5.1 to /opt/lua5.1
