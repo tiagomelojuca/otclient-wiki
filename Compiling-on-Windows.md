@@ -12,6 +12,7 @@ To compile OTClient on Windows, you will need:
 
 * [Otclient SDK v1.0](https://github.com/conde2/otclient-sdk) (libraries)
 
+* [OpenGL-ES-SDK](https://github.com/okk3/https://github.com/okk3/OpenGL-ES-SDK) (libraries for Directx9 Support)
 
 **2. Install the required software**
 
@@ -32,6 +33,8 @@ Find the directory vc14 in the copy of OTClient that you downloaded, and open ot
 To configure the build, navigate to Build -> Configuration Manager in the menu. A dialog should pop up where you can choose between Release or Debug build, and 32-bit (Win32) or 64-bit (x64) build.
 
 To start compiling, open the Build menu again and click on Build Solution.
+
+For Directx9 Support: Link the libraries and set OPENGL_ES=2 as a preprocessor.
 
 # Codeblocks
 ### Download what you will need
@@ -89,7 +92,7 @@ If your CodeBlocks (or CMake) complains it cannot find GCC or any working compil
 Any other problem should be posted in [otclient's otland forum](http://otland.net/f494/) or alternatively IRC (see README), don't spam! Ask, wait, try to solve it yourself until you get an answer, do ***NOT*** re-ask.
 
 ### Dx9 Support Layer
-If you would like to enable the dx9 support layer for otclient you need to compile with *-DOPENGLES=2.0*. Now otclient.exe will ask for libEGL.dll and libGLESv2.dll which you can get [here](https://dl.dropbox.com/u/49948294/otclient/dx9_dlls.zip), place these dlls with the otclient.exe folder.
+If you would like to enable the dx9 support layer for otclient you need to compile with the *-DOPENGLES=2.0* preprocessor on Codeblocks or the *OPENGL_ES=2* preprocessor on Microsoft Visual Studio 2015. Now otclient.exe will ask for libEGL.dll and libGLESv2.dll which you can get [here](https://github.com/okk3/OpenGL-ES-SDK), place these dlls in the otclient.exe folder according to the architecture (x86-64 for 64bit and x86 for 32bit) your client has been compiled for.
 ***
 
 ***
