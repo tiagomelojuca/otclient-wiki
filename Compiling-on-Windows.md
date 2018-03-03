@@ -12,7 +12,7 @@ To compile OTClient on Windows, you will need:
 
 * [Otclient SDK v1.0](https://github.com/conde2/otclient-sdk) (libraries)
 
-* [OpenGL-ES-SDK](https://github.com/okk3/https://github.com/okk3/OpenGL-ES-SDK) (libraries for Directx9 Support)
+* [OpenGL-ES-SDK](https://github.com/okk3/OpenGL-ES-SDK) (libraries for Directx9 Support)
 
 **2. Install the required software**
 
