@@ -34,6 +34,9 @@ mkdir /opt/lua5.1
 make INSTALL_TOP=/opt/lua5.1 install
 ```
 
+_Observation: If you cant curl, you'll need to enter http://www.lua.org/ftp/lua-5.1.5.tar.gz and download manually the file_
+
+
 ## Cloning and compiling
 
 You may need to change the included directory of your installed version of OPENSSL. Check your installed version with `brew info openssl`. If it is not version 1.0.2.n, change the version in the `cmake` command below.
