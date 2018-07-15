@@ -1,6 +1,45 @@
-**WARNING: This page  is outdated**, at the moment I would recommend compiling with mingw-w64 (instead of mingw32, they are different!) and compile all required libraries yourself or find them pre compiled on the web.
+# Microsoft Visual Studio 2017 with vcpkg
 
-In this this tutorial I will explain how you get OTClient compiled and running on Windows machines.
+#### 1. Download/install the required software
+
+To compile on Windows, you will need to download and install:
+* [Git](https://git-scm.com/download/win)
+* [Visual Studio 2017 Community](https://www.visualstudio.com/vs/) (compiler)
+* [vcpkg](https://github.com/Microsoft/vcpkg) (package manager)
+
+#### 2. Set up vcpkg
+
+Make sure to follow full installation of `vcpkg`, per [Official Quickstart](https://github.com/Microsoft/vcpkg#quick-start) execute the following in _Git Bash_ or _Powershell_:
+```
+git clone https://github.com/Microsoft/vcpkg
+cd vcpkg
+.\bootstrap-vcpkg.bat
+.\vcpkg integrate install
+```
+
+#### 3. Download the source code
+
+    git clone --recursive https://github.com/edubart/otclient.git
+
+#### 4. Install libraries
+
+Choose one set of libraries, depending on the target platform and execute the following in _Git Bash_ or _Powershell_:
+
+* For 64-bit (x64) build:
+
+      vcpkg install boost-iostreams:x64-windows boost-asio:x64-windows boost-system:x64-windows boost-variant:x64-windows boost-lockfree:x64-windows luajit:x64-windows glew:x64-windows boost-filesystem:x64-windows boost-uuid:x64-windows physfs:x64-windows openal-soft:x64-windows libogg:x64-windows libvorbis:x64-windows zlib:x64-windows
+
+* For 32-bit (Win32) build:
+
+      vcpkg install boost-iostreams:x86-windows boost-asio:x86-windows boost-system:x86-windows boost-variant:x86-windows boost-lockfree:x86-windows luajit:x86-windows glew:x86-windows boost-filesystem:x86-windows boost-uuid:x86-windows physfs:x86-windows openal-soft:x86-windows libogg:x86-windows libvorbis:x86-windows zlib:x86-windows 
+
+#### 5. Build
+
+1. **Open `vc14/otclient.vcxproj`**. This should launch Visual Studio.
+
+1. Choose build configuration from the drop downs (Debug or Release and Win32 or x64). For best performance choose Release & x64.
+
+1. To start compiling **press F7**.
 
 # Microsoft Visual Studio 2015
 
@@ -8,7 +47,7 @@ In this this tutorial I will explain how you get OTClient compiled and running o
 
 To compile OTClient on Windows, you will need:
 
-* [Visual Studio 2015 Update 3](https://www.visualstudio.com/) (compiler)
+* [Visual Studio 2017](https://www.visualstudio.com/) (compiler)
 
 * [Otclient SDK v1.0](https://github.com/conde2/otclient-sdk) (libraries)
 
