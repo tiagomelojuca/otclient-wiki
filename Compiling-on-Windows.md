@@ -130,8 +130,10 @@ Open the said generated Codeblocks Project file (**otclient.cbp**) by CMake with
 If your CodeBlocks (or CMake) complains it cannot find GCC or any working compiler, configure CodeBlock's compiler via settings there.
 Any other problem should be posted in [otclient's otland forum](http://otland.net/f494/) or alternatively IRC (see README), don't spam! Ask, wait, try to solve it yourself until you get an answer, do ***NOT*** re-ask.
 
-### Dx9 Support Layer
+### Dx9 Support Layer 
 If you would like to enable the dx9 support layer for otclient you need to compile with the *-DOPENGLES=2.0* preprocessor on Codeblocks or the *OPENGL_ES=2* preprocessor on Microsoft Visual Studio 2015. Now otclient.exe will ask for libEGL.dll and libGLESv2.dll which you can get [here](https://github.com/okk3/OpenGL-ES-SDK), place these dlls in the otclient.exe folder according to the architecture (x86-64 for 64bit and x86 for 32bit) your client has been compiled for.
+
+Note: Compiling with the dx9 support layer will probably only work on VS15.
 ***
 
 ***
