@@ -54,7 +54,7 @@ cmake \
   -DBoost_LIBRARY_DIR=/usr/local/Cellar/boost@1.59/1.59.0/lib/ \
   -DOPENSSL_INCLUDE_DIR=/usr/local/Cellar/openssl/1.0.2n/include/ \
   ..
-make -j4
+make -j$(sysctl -n hw.ncpu)
 ```
 
 Now you can run, the otclient output binary should be in the same directory.
