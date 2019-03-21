@@ -27,11 +27,11 @@ Choose one set of libraries, depending on the target platform and execute the fo
 
 * For 64-bit (x64) build:
 
-      vcpkg install boost-iostreams:x64-windows boost-asio:x64-windows boost-system:x64-windows boost-variant:x64-windows boost-lockfree:x64-windows luajit:x64-windows glew:x64-windows boost-filesystem:x64-windows boost-uuid:x64-windows physfs:x64-windows openal-soft:x64-windows libogg:x64-windows libvorbis:x64-windows zlib:x64-windows
+      vcpkg install boost-iostreams:x64-windows boost-asio:x64-windows boost-system:x64-windows boost-variant:x64-windows boost-lockfree:x64-windows luajit:x64-windows glew:x64-windows boost-filesystem:x64-windows boost-uuid:x64-windows physfs:x64-windows openal-soft:x64-windows libogg:x64-windows libvorbis:x64-windows zlib:x64-windows opengl:x64-windows
 
 * For 32-bit (Win32) build:
 
-      vcpkg install boost-iostreams:x86-windows boost-asio:x86-windows boost-system:x86-windows boost-variant:x86-windows boost-lockfree:x86-windows luajit:x86-windows glew:x86-windows boost-filesystem:x86-windows boost-uuid:x86-windows physfs:x86-windows openal-soft:x86-windows libogg:x86-windows libvorbis:x86-windows zlib:x86-windows 
+      vcpkg install boost-iostreams:x86-windows boost-asio:x86-windows boost-system:x86-windows boost-variant:x86-windows boost-lockfree:x86-windows luajit:x86-windows glew:x86-windows boost-filesystem:x86-windows boost-uuid:x86-windows physfs:x86-windows openal-soft:x86-windows libogg:x86-windows libvorbis:x86-windows zlib:x86-windows opengl:x86-windows
 
 #### 5. Build
 
