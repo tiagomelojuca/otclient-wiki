@@ -8,6 +8,8 @@ sudo apt-get install -y libboost-all-dev libphysfs-dev libssl-dev liblua5.1-0-de
 sudo apt-get install -y libglew-dev libvorbis-dev libopenal-dev zlib1g-dev
 ```
 
+and if you are using 18.04, you may also need `sudo apt-get install -y libogg-dev`
+
 Get the sources, compile and run
 
 ```sh
