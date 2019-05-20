@@ -41,7 +41,7 @@ sudo mv /usr/local/lib/libphysfs.a /usr/lib/x86_64-linux-gnu/.
 
 
 ## Fedora
-```
+
 These instructions were tested on Fedora 20. Some packages that I suggest to be installed might not actually be needed and there might be a simpler way to link in Lua, but I am not aware of it. In case of a problem, contact d33tah.
 
 #### Install Lua 5.1 to /opt/lua5.1
