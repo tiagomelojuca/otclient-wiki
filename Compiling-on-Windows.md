@@ -15,8 +15,8 @@ git clone https://github.com/Microsoft/vcpkg
 cd vcpkg
 .\bootstrap-vcpkg.bat
 .\vcpkg integrate install
-.\ -> .\\ in Git Bash
 ```
+.\ -> .\\ in Git Bash
 
 #### 3. Download the source code
 
