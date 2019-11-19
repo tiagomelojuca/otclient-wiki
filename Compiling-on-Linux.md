@@ -29,7 +29,7 @@ Then do:
 ```
 sudo apt-get install libncurses5-dev
 sudo apt-get install mercurial
-hg clone -r stable-2.0 http://hg.icculus.org/icculus/physfs/
+hg clone -r stable-3.0 http://hg.icculus.org/icculus/physfs/
 cd physfs
 sudo mkdir build
 cd build
