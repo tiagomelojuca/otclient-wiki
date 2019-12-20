@@ -47,6 +47,7 @@ These instructions were tested on Fedora 20. Some packages that I suggest to be 
 #### Install Lua 5.1 to /opt/lua5.1
 
 ```
+sudo yum install readline-devel
 yum-builddep lua
 wget "http://www.lua.org/ftp/lua-5.1.5.tar.gz" -O- | tar zxvf -
 cd lua-5.1.5
@@ -58,7 +59,7 @@ make INSTALL_TOP=/opt/lua5.1 install
 #### Install needed packages
 
 ```
-yum install boost boost-devel physfs physfs-devel mesa-libGLw mesa-libGL-devel glew-devel openal-devel libvorbis-devel boost-system boost-thread boost-chrono boost-filesystem
+yum install boost-devel physfs-devel mesa-libGLw mesa-libGL-devel glew-devel openal-devel libvorbis-devel boost-system boost-thread boost-chrono boost-filesystem
 ```
 
 #### Build otclient
