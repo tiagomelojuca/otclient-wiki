@@ -40,6 +40,23 @@ sudo mv /usr/local/lib/libphysfs.a /usr/lib/x86_64-linux-gnu/.
 ```
 
 
+## Manjaro/Arch 
+
+First upgrade your system and install required development packages using pacman
+
+```sh
+sudo pacman -Syu && sudo pacman -S base-devel git cmake boost physfs openssl lua51 glew libvorbis openal zlib libogg
+```
+
+Get the sources, compile and run
+
+```sh
+git clone git://github.com/edubart/otclient.git
+cd otclient && mkdir build && cd build && cmake .. && make
+./otclient
+```
+
+
 ## Fedora
 
 These instructions were tested on Fedora 20. Some packages that I suggest to be installed might not actually be needed and there might be a simpler way to link in Lua, but I am not aware of it. In case of a problem, contact d33tah.
