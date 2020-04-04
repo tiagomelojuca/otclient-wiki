@@ -14,7 +14,7 @@ Get the sources, compile and run
 
 ```sh
 git clone git://github.com/edubart/otclient.git
-cd otclient && mkdir build && cd build && cmake .. && make
+cd otclient && mkdir -p build && cd build && cmake .. && make
 ./otclient
 ```
 
