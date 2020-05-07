@@ -42,7 +42,8 @@ Choose one set of libraries, depending on the target platform and execute the fo
 
 1. To start compiling **press F7**.
 
-# Microsoft Visual Studio 2015
+# Microsoft Visual Studio 2015 (deprecated)
+> Note: since 2019-05-07(dd) the otclient.sln MSVS project file is no longer configured for use with OTClient SDK. Please follow Compiling on Windows (with vcpkg) instead. The following tutorial applies to master branch until commit [e3caaac](https://github.com/edubart/otclient/commit/e3caaacc55b68d27176645fbc2dc059398c9458f).
 
 **1. Download the required software**
 
