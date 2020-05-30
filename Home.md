@@ -5,7 +5,7 @@ If you are looking for information about OTClient, here is the right place. This
 
 ## About OTClient
 OTClient is an alternative Tibia client for usage with otserv.
-It aims to be complete and flexible, for that it uses LUA
+It aims to be complete and flexible, for that it uses Lua
 scripting for all game interface functionality and configurations using a new file type known as OTML, that was created with the purpose to be easy for typing/reading.
 OTClient works with a modular system, each functionality is a separated module,
 this gives the possibility to users modify anything easily. It also allows to
