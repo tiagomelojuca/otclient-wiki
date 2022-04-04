@@ -1,14 +1,14 @@
-## Ubuntu
+## Debian/Ubuntu
 
 First install required development packages using apt-get
 
 ```sh
-sudo apt-get install -y build-essential cmake git-core
-sudo apt-get install -y libboost-all-dev libphysfs-dev libssl-dev liblua5.1-0-dev
-sudo apt-get install -y libglew-dev libvorbis-dev libopenal-dev zlib1g-dev
+sudo apt install -y build-essential cmake git-core
+sudo apt install -y libboost-all-dev libphysfs-dev libssl-dev liblua5.1-0-dev
+sudo apt install -y libglew-dev libvorbis-dev libopenal-dev zlib1g-dev
 ```
 
-and if you are using 18.04, you may also need `sudo apt-get install -y libogg-dev`
+and if you are using 18.04, you may also need `sudo apt install -y libogg-dev`
 
 Get the sources, compile and run
 
@@ -27,9 +27,7 @@ Linking CXX executable otclient /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-
 
 Then do:
 ```
-sudo apt-get install libncurses5-dev
-sudo apt-get install mercurial
-hg clone -r stable-3.0 http://hg.icculus.org/icculus/physfs/
+git clone -b stable-3.0 https://github.com/icculus/physfs.git
 cd physfs
 sudo mkdir build
 cd build
