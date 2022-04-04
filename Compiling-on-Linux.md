@@ -14,7 +14,11 @@ Get the sources, compile and run
 
 ```sh
 git clone git://github.com/edubart/otclient.git
-cd otclient && mkdir -p build && cd build && cmake .. && make
+cd otclient
+mkdir -p build
+cd build
+cmake ..
+make -j $(nproc)
 ./otclient
 ```
 
@@ -32,9 +36,9 @@ cd physfs
 sudo mkdir build
 cd build
 sudo cmake ..
-sudo make
+sudo make -j $(nproc)
 sudo make install
-sudo mv /usr/local/lib/libphysfs.a /usr/lib/x86_64-linux-gnu/.
+sudo cp /usr/local/lib/libphysfs.a /usr/lib/x86_64-linux-gnu/.
 ```
 
 
