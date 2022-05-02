@@ -18,6 +18,8 @@ cd vcpkg
 ```
 ```.\ -> .\\ in Git Bash```
 
+Add `vcpkg` path to your environment variable path (e.g. C:\Projects\vcpkg)
+
 #### 3. Download the source code
 
     git clone --recursive https://github.com/edubart/otclient.git
