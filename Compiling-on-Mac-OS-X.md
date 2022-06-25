@@ -21,7 +21,8 @@ brew install \
   libogg \
   libvorbis \
   lua@5.1 \
-  physfs
+  physfs \
+  gmp
 ```
 
 ## Cloning and compiling
@@ -42,10 +43,12 @@ cd build
 
 cmake \
   -DUSE_STATIC_LIBS=OFF \
-  -DLUA_LIBRARY=/usr/local/Cellar/lua@5.1/5.1.5_8/lib/liblua.5.1.5.dylib \
-  -DLUA_INCLUDE_DIR=/usr/local/Cellar/lua@5.1/5.1.5_8/include/lua5.1/ \
-  -DBoost_INCLUDE_DIR=/usr/local/Cellar/boost@1.59/1.59.0/include/ \
-  -DOPENSSL_INCLUDE_DIR=/usr/local/Cellar/openssl/1.0.2t/include/ \
+  -DLUA_LIBRARY=/opt/homebrew/Cellar/lua@5.1/5.1.5_8/lib/liblua.5.1.5.dylib \
+  -DLUA_INCLUDE_DIR=/opt/homebrew/Cellar/lua@5.1/5.1.5_8/include/lua5.1/ \
+  -DBoost_INCLUDE_DIR=/opt/homebrew/Cellar/boost@1.59/1.59.0/include/ \
+  -DOPENSSL_INCLUDE_DIR=/opt/homebrew/Cellar/openssl/1.0.2t/include/ \
+  -DGMP_INCLUDE_DIR=/opt/homebrew/Cellar/gmp/6.2.1_1/include/ \
+  -DGMP_LIBRARY=/opt/homebrew/Cellar/gmp/6.2.1_1/lib/ \
   ../
 
 make -j$(sysctl -n hw.ncpu)
